@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { itineraries } from "@/data/itineraries";
 import { cities } from "@/data/cities";
+import { HeroSection } from "@/features/home/components/HeroSection";
 
 export const metadata: Metadata = { title: "Nuestra Gran Aventura" };
 
@@ -11,29 +12,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="section flex flex-col items-center text-center border-b border-border bg-muted/20">
-        <div className="container-content space-y-6">
-          <p className="eyebrow">Nuestra Gran Aventura</p>
-          <h1 className="heading-1 max-w-2xl mx-auto">
-            El viaje que siempre habéis soñado
-          </h1>
-          <p className="lead max-w-xl mx-auto">
-            Un crucero diseñado para dos. Elegante, relajado y lleno de momentos
-            que recordaréis siempre.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 pt-2">
-            <Link href="/itineraries" className="btn-primary">
-              Ver rutas
-            </Link>
-            <Link
-              href="/destinations"
-              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-2.5 text-sm font-medium transition-colors hover:bg-muted"
-            >
-              Explorar destinos
-            </Link>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* ── Featured itineraries ─────────────────────────────── */}
       <section className="section">
