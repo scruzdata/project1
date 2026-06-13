@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 import type { TravelMonth } from "@/data/month";
-import { SCORE_DIMS, getScoreStyle } from "../calendar.config";
+import { SCORE_DIMS } from "../calendar.config";
 import { cn } from "@/lib/utils";
 
 interface BestMonthBadgeProps {
@@ -9,7 +9,6 @@ interface BestMonthBadgeProps {
 }
 
 export function BestMonthBadge({ month, rank }: BestMonthBadgeProps) {
-  const style = getScoreStyle(month.overallScore);
   const isTop = rank === 1;
 
   return (

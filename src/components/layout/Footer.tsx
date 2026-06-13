@@ -66,7 +66,7 @@ export function Footer() {
         {/* Quote — full-width row */}
         <div className="border-t border-border py-8 text-center space-y-2">
           <blockquote className="font-heading text-base md:text-lg italic text-foreground/70 leading-relaxed">
-            "El mundo es un libro. Quien no viaja, solo lee una página."
+            &ldquo;El mundo es un libro. Quien no viaja, solo lee una página.&rdquo;
           </blockquote>
           <p className="caption">— San Agustín</p>
         </div>

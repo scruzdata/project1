@@ -135,8 +135,8 @@ export function MobileNav({ className }: MobileNavProps) {
               {/* Emotional footer */}
               <div className="px-6 py-6 border-t border-border shrink-0">
                 <p className="font-heading text-sm italic text-muted-foreground text-center leading-relaxed">
-                  "El mundo es un libro.<br />
-                  Quien no viaja, solo lee una página."
+                  &ldquo;El mundo es un libro.<br />
+                  Quien no viaja, solo lee una página.&rdquo;
                 </p>
               </div>
             </motion.div>

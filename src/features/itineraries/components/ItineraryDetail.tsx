@@ -5,7 +5,6 @@ import { Clock, Anchor, MapPin, Sparkles, Heart } from "lucide-react";
 import type { Itinerary } from "@/types";
 import {
   DIFFICULTY_CONFIG,
-  MONTH_FULL,
   ALL_MONTHS,
   formatDestinationId,
 } from "../itineraries.config";

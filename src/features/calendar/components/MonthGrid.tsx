@@ -45,7 +45,6 @@ export function MonthGrid({ months }: MonthGridProps) {
               whileTap={{ scale: 0.97 }}
               aria-pressed={isSelected}
               aria-label={`${m.name}: ${m.overallScore} de 10`}
-              role="listitem"
               className={cn(
                 "relative rounded-2xl border p-4 text-left transition-all duration-200 cursor-pointer",
                 "flex flex-col items-center gap-2",
