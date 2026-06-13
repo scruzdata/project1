@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { cruiseLines } from "@/data/cruiseLines";
 import { CruiseLineGrid } from "@/features/cruise-lines/components/CruiseLineGrid";
-import { CruiseLineComparison } from "@/features/cruise-lines/components/CruiseLineComparison";
+import { ComparisonTable } from "@/features/cruise-lines/components/ComparisonTable";
 
 export const metadata: Metadata = { title: "Cruceros" };
 
@@ -27,20 +27,18 @@ export default function CruiseLinesPage() {
         </div>
       </section>
 
-      {/* Comparison — always shown; becomes richer as more data is added */}
-      <section className="section-sm border-t border-border">
+      {/* Interactive comparison table */}
+      <section className="section border-t border-border bg-muted/10">
         <div className="container-site">
           <div className="mb-10">
-            <p className="eyebrow mb-3">Comparativa</p>
-            <h2 className="heading-2">Análisis por categoría</h2>
+            <p className="eyebrow mb-3">Comparativa interactiva</p>
+            <h2 className="heading-2">Compara todas las compañías</h2>
             <p className="lead mt-2 max-w-xl">
-              Un vistazo rápido a las puntuaciones que más importan para un
-              viaje relajado y memorable.
+              Filtra por categoría o ambiente y ordena por cualquier puntuación.
+              Encuentra la compañía que mejor se adapta a vuestro viaje.
             </p>
           </div>
-          <div className="max-w-3xl">
-            <CruiseLineComparison cruiseLines={cruiseLines} />
-          </div>
+          <ComparisonTable cruiseLines={cruiseLines} />
         </div>
       </section>
     </>

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"features/map/components/MapWrapper.tsx -> ./InteractiveMap":{"id":3260,"files":["static/css/55693049b062c6a3.css","static/chunks/d0deef33.cac6acee3fffe7af.js","static/chunks/260.8aa68c6e5a19faf5.js"]}}';

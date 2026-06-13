@@ -1,24 +1,136 @@
-export const months = [
+import type { TravelMonth } from "@/data/month";
 
+export const months: TravelMonth[] = [
   {
-  month:9,
-  
-  name:"September",
-  
-  overallScore:10,
-  
-  temperatureScore:10,
-  
-  crowdScore:9,
-  
-  priceScore:9,
-  
-  seaConditionScore:10,
-  
-  recommended:true,
-  
-  summary:
-  "The best overall month."
-  }
-  
-  ];
+    month: 1,
+    name: "Enero",
+    overallScore: 2,
+    temperatureScore: 3,
+    crowdScore: 10,
+    priceScore: 10,
+    seaConditionScore: 3,
+    recommended: false,
+    summary: "Temporada baja. Mar agitado, temperaturas frescas y pocos cruceros disponibles.",
+  },
+  {
+    month: 2,
+    name: "Febrero",
+    overallScore: 2,
+    temperatureScore: 3,
+    crowdScore: 10,
+    priceScore: 10,
+    seaConditionScore: 3,
+    recommended: false,
+    summary: "El mes menos popular. Tiempo inestable y la mayoría de destinos en temporada baja.",
+  },
+  {
+    month: 3,
+    name: "Marzo",
+    overallScore: 4,
+    temperatureScore: 5,
+    crowdScore: 9,
+    priceScore: 9,
+    seaConditionScore: 5,
+    recommended: false,
+    summary: "Inicio de temporada. Tiempo variable pero precios muy asequibles y destinos tranquilos.",
+  },
+  {
+    month: 4,
+    name: "Abril",
+    overallScore: 7,
+    temperatureScore: 7,
+    crowdScore: 8,
+    priceScore: 7,
+    seaConditionScore: 7,
+    recommended: false,
+    summary: "Primavera mediterránea agradable. Buenas temperaturas y poca afluencia turística.",
+  },
+  {
+    month: 5,
+    name: "Mayo",
+    overallScore: 8,
+    temperatureScore: 8,
+    crowdScore: 7,
+    priceScore: 7,
+    seaConditionScore: 8,
+    recommended: true,
+    summary: "Temperatura perfecta, mar calmado y multitudes manejables. Una de las mejores opciones.",
+  },
+  {
+    month: 6,
+    name: "Junio",
+    overallScore: 8,
+    temperatureScore: 8,
+    crowdScore: 6,
+    priceScore: 6,
+    seaConditionScore: 9,
+    recommended: true,
+    summary: "Mar calmado y calor agradable. Los destinos empiezan a llenarse pero aún es disfrutable.",
+  },
+  {
+    month: 7,
+    name: "Julio",
+    overallScore: 5,
+    temperatureScore: 3,
+    crowdScore: 2,
+    priceScore: 3,
+    seaConditionScore: 8,
+    recommended: false,
+    summary: "Demasiado caluroso y muy concurrido. Precios en máximos y destinos saturados.",
+  },
+  {
+    month: 8,
+    name: "Agosto",
+    overallScore: 3,
+    temperatureScore: 1,
+    crowdScore: 1,
+    priceScore: 2,
+    seaConditionScore: 8,
+    recommended: false,
+    summary: "Alta temporada: calor extremo, máxima masificación y precios altísimos. No recomendado.",
+  },
+  {
+    month: 9,
+    name: "Septiembre",
+    overallScore: 10,
+    temperatureScore: 10,
+    crowdScore: 9,
+    priceScore: 9,
+    seaConditionScore: 10,
+    recommended: true,
+    summary: "El mejor mes del año. Temperatura perfecta, mar en calma, pocas multitudes y buenos precios.",
+  },
+  {
+    month: 10,
+    name: "Octubre",
+    overallScore: 8,
+    temperatureScore: 8,
+    crowdScore: 8,
+    priceScore: 8,
+    seaConditionScore: 8,
+    recommended: true,
+    summary: "Excelente equilibrio entre temperatura agradable, tranquilidad y precios razonables.",
+  },
+  {
+    month: 11,
+    name: "Noviembre",
+    overallScore: 5,
+    temperatureScore: 6,
+    crowdScore: 9,
+    priceScore: 9,
+    seaConditionScore: 5,
+    recommended: false,
+    summary: "Fin de temporada. Precios bajos y destinos tranquilos, pero tiempo cada vez más variable.",
+  },
+  {
+    month: 12,
+    name: "Diciembre",
+    overallScore: 3,
+    temperatureScore: 4,
+    crowdScore: 8,
+    priceScore: 8,
+    seaConditionScore: 4,
+    recommended: false,
+    summary: "Temporada baja. Algunas líneas suspenden rutas y las temperaturas son demasiado frías.",
+  },
+];
