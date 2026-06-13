@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/cruise-lines/celebrity":{},"/cruise-lines/oceania":{},"/cruise-lines/regent":{},"/cruise-lines/silversea":{},"/cruise-lines/msc":{},"/cruise-lines/costa":{},"/cities/santorini":{},"/cities/mykonos":{},"/cities/rhodes":{},"/cities/kusadasi":{},"/cities/malta":{},"/cities/palma":{},"/cities/marseille":{},"/cities/la-spezia":{},"/cities/rome":{},"/cities/naples":{},"/cities/malaga":{},"/cities/cadiz":{},"/cities/lisbon":{},"/cities/porto":{},"/cities/tangier":{},"/itineraries/greek-islands":{},"/itineraries/western-mediterranean":{},"/itineraries/iberia-morocco":{}},"dynamicRoutes":{"/cruise-lines/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/cruise-lines/[id]","routeRegex":"^\\/cruise\\-lines\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/cities/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/cities/[id]","routeRegex":"^\\/cities\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/itineraries/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/itineraries/[id]","routeRegex":"^\\/itineraries\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"7342dbb426a0b51d3fb0e05e633c104d","previewModeSigningKey":"26e02224477975a539c49f3e69bb675642d168219c7c22085dff8bedf38f30dc","previewModeEncryptionKey":"0be2789c165f3db4a414c564c403d992f78ee325d97836f43fa507688313128c"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "1f59e8d75512129734a64675f44b783c",
+    "previewModeSigningKey": "a13230d01faad5e4cb31f1b2d2742a1b2f85a1c219e0fa0eb616b05a2e64e895",
+    "previewModeEncryptionKey": "e532846c1ed6efdcff434705db0852cf3880623ada51bd8a42db76f31ec8da3d"
+  }
+}

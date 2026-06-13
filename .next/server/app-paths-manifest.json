@@ -1,11 +1,1 @@
-{
-  "/calendar/page": "app/calendar/page.js",
-  "/cities/[id]/page": "app/cities/[id]/page.js",
-  "/cruise-lines/[id]/page": "app/cruise-lines/[id]/page.js",
-  "/cruise-lines/page": "app/cruise-lines/page.js",
-  "/destinations/page": "app/destinations/page.js",
-  "/itineraries/[id]/page": "app/itineraries/[id]/page.js",
-  "/itineraries/page": "app/itineraries/page.js",
-  "/map/page": "app/map/page.js",
-  "/page": "app/page.js"
-}
+{}

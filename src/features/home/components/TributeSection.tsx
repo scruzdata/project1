@@ -32,7 +32,7 @@ export function TributeSection({
               <p>
                 Lleváis toda la vida construyendo algo más valioso que cualquier
                 destino: un hogar lleno de amor, esfuerzo y entrega. Cada
-                madrugada, cada sacrificio, cada "no os preocupéis" ha sido un
+                madrugada, cada sacrificio, cada &ldquo;no os preocupéis&rdquo; ha sido un
                 ladrillo en la familia que hoy somos.
               </p>
               <p>
@@ -52,7 +52,7 @@ export function TributeSection({
             </div>
 
             <p className="font-heading text-lg text-accent italic">
-              "El mejor viaje es el que aún no habéis vivido."
+              &ldquo;El mejor viaje es el que aún no habéis vivido.&rdquo;
             </p>
           </div>
 
