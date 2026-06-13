@@ -102,9 +102,9 @@ export function TributeSection({ photos }: TributeSectionProps) {
               </p>
               <p>
                 Sabemos que ahora estáis en un momento delicado por temas médicos,
-                operaciones de rodilla, etc. Así que aún no os hemos comprado nada;
-                esto es un recordatorio para que miréis con tranquilidad adónde os
-                gustaría ir y ver.
+                operaciones de rodilla, etc. Así que aún no os hemos comprado nada,
+                esto es un recordatorio para que miréis con tranquilidad a dónde os
+                gustaría ir y que ver.
               </p>
               <p>
                 Cuando el tiempo, los médicos y el físico os acompañen, solo tenéis
@@ -112,6 +112,13 @@ export function TributeSection({ photos }: TributeSectionProps) {
               </p>
               <p className="font-medium text-foreground">
                 Os lo merecéis. Todo esto y mucho más.
+              </p>
+              <p className="font-medium text-foreground">
+...
+              </p>
+              <p className="font-style: italic">
+              Con cariño:
+                Sergio y Daniel
               </p>
             </div>
 

@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "1f59e8d75512129734a64675f44b783c",
-    "previewModeSigningKey": "a13230d01faad5e4cb31f1b2d2742a1b2f85a1c219e0fa0eb616b05a2e64e895",
-    "previewModeEncryptionKey": "e532846c1ed6efdcff434705db0852cf3880623ada51bd8a42db76f31ec8da3d"
-  }
-}
+{"version":4,"routes":{"/itineraries/greek-islands":{},"/itineraries/western-mediterranean":{},"/itineraries/iberia-morocco":{},"/itineraries/Italia-Turquia-Grecia":{},"/itineraries/talia-Turquia-Grecia":{},"/itineraries/talia-turquia-Grecia":{},"/itineraries/talia-turquia-grecia":{},"/itineraries/italia-turquia-grecia":{}},"dynamicRoutes":{"/itineraries/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/itineraries/[id]","routeRegex":"^\\/itineraries\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"1f59e8d75512129734a64675f44b783c","previewModeSigningKey":"a13230d01faad5e4cb31f1b2d2742a1b2f85a1c219e0fa0eb616b05a2e64e895","previewModeEncryptionKey":"e532846c1ed6efdcff434705db0852cf3880623ada51bd8a42db76f31ec8da3d"}}

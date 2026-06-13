@@ -87,8 +87,48 @@ const itineraries = [
         image: "/images/Mediterraneo.jpg"
     },
     {
+        id: "italia-turquia-grecia",
+        name: "Italia-Turquia-Grecia",
+        score: 9.1,
+        durationMin: 0,
+        durationMax: 12,
+        departurePorts: [
+            "Barcelona",
+            "Roma"
+        ],
+        destinationIds: [
+            "Barcelona",
+            "Niza",
+            "la-spezia",
+            "rome",
+            "naples",
+            "Katákolon",
+            "Kusadasi (Turquia)",
+            "Santorini (Grecia)",
+            "Pireo(Atenas)"
+        ],
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        difficulty: "easy",
+        idealFor: [
+            "Primer crucero",
+            "Ritmo tranquilo",
+            "Cultura y gastronomía"
+        ],
+        highlights: [
+            "El Coliseo",
+            "Costa Azul",
+            "Costa Amalfitana"
+        ],
+        image: "/images/italy_turquia-grecia.png"
+    },
+    {
         id: "iberia-morocco",
-        name: "Iberia y Marruecos",
+        name: "España y Marruecos",
         score: 9.1,
         durationMin: 8,
         durationMax: 12,

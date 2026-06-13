@@ -13,7 +13,8 @@ __turbopack_context__.s([
 const ITINERARY_COLORS = {
     "greek-islands": "#d4af37",
     "western-mediterranean": "#10b981",
-    "iberia-morocco": "#f97316"
+    "iberia-morocco": "#f97316",
+    "italia-turquia-grecia": "#275EF5"
 };
 const MAP_DEFAULTS = {
     center: [

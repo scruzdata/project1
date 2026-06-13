@@ -2,6 +2,7 @@ export const ITINERARY_COLORS: Record<string, string> = {
   "greek-islands": "#d4af37",
   "western-mediterranean": "#10b981",
   "iberia-morocco": "#f97316",
+  "italia-turquia-grecia": "#275EF5",
 };
 
 export const MAP_DEFAULTS = {

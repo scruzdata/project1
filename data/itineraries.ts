@@ -1,4 +1,7 @@
 import type { Itinerary } from "@/types/itinerary";
+import { STORAGE_KEY_PANEL_POSITION_PREFIX } from "next/dist/next-devtools/dev-overlay/shared";
+import { Poiret_One } from "next/font/google";
+import { Z_DATA_ERROR } from "zlib";
 
 export const itineraries: Itinerary[] = [
   {
@@ -8,7 +11,7 @@ export const itineraries: Itinerary[] = [
     durationMin: 8,
     durationMax: 12,
     departurePorts: ["Barcelona", "Atenas"],
-    destinationIds: ["santorini", "mykonos", "rhodes", "kusadasi", "malta"],
+    destinationIds: ["pireo","santorini","katakolon","corfu","kotor","zadar", "koper","ravenna",],
     bestMonths: [5, 6, 9, 10],
     difficulty: "moderate",
     idealFor: ["Experiencia memorable", "Paisajes impresionantes", "Escenarios icónicos"],
@@ -22,7 +25,7 @@ export const itineraries: Itinerary[] = [
     durationMin: 7,
     durationMax: 10,
     departurePorts: ["Barcelona", "Roma"],
-    destinationIds: ["palma", "marseille", "la-spezia", "rome", "naples"],
+    destinationIds: ["barcelona","palma", "marseille", "la-spezia", "rome", "naples"],
     bestMonths: [5, 6, 9, 10],
     difficulty: "easy",
     idealFor: ["Primer crucero", "Ritmo tranquilo", "Cultura y gastronomía"],
@@ -30,8 +33,22 @@ export const itineraries: Itinerary[] = [
     image: "/images/Mediterraneo.jpg",
   },
   {
+    id: "italia-turquia-grecia",
+    name: "Italia-Turquia-Grecia",
+    score: 9.1,
+    durationMin: 0,
+    durationMax: 12,
+    departurePorts: ["Barcelona", "Roma"],
+    destinationIds: ["barcelona", "niza", "la-spezia", "rome", "naples","katakolon","Kusadasi","santorini", "pireo"],
+    bestMonths: [5, 6, 9, 10],
+    difficulty: "easy",
+    idealFor: ["Primer crucero", "Ritmo tranquilo", "Cultura y gastronomía"],
+    highlights: ["El Coliseo", "Costa Azul", "Costa Amalfitana"],
+    image: "/images/italy_turquia-grecia.png",
+  },
+  {
     id: "iberia-morocco",
-    name: "Iberia y Marruecos",
+    name: "España y Marruecos",
     score: 9.1,
     durationMin: 8,
     durationMax: 12,

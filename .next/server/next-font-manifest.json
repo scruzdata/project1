@@ -5,6 +5,26 @@
       "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",
       "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
     ],
+    "[project]/src/app/cruise-lines/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
+    "[project]/src/app/itineraries/[id]/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
+    "[project]/src/app/itineraries/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
+    "[project]/src/app/map/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",
+      "static/media/2a65768255d6b625-s.p.d19752fb.woff2"
+    ],
     "[project]/src/app/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
       "static/media/70e3db2de7f94926-s.p.347f98aa.woff2",

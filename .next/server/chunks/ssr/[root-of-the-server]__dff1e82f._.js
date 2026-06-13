@@ -25,11 +25,14 @@ const itineraries = [
             "Atenas"
         ],
         destinationIds: [
+            "pireo",
             "santorini",
-            "mykonos",
-            "rhodes",
-            "kusadasi",
-            "malta"
+            "katakolon",
+            "corfu",
+            "kotor",
+            "zadar",
+            "koper",
+            "ravenna"
         ],
         bestMonths: [
             5,
@@ -61,6 +64,7 @@ const itineraries = [
             "Roma"
         ],
         destinationIds: [
+            "barcelona",
             "palma",
             "marseille",
             "la-spezia",
@@ -87,8 +91,48 @@ const itineraries = [
         image: "/images/Mediterraneo.jpg"
     },
     {
+        id: "italia-turquia-grecia",
+        name: "Italia-Turquia-Grecia",
+        score: 9.1,
+        durationMin: 0,
+        durationMax: 12,
+        departurePorts: [
+            "Barcelona",
+            "Roma"
+        ],
+        destinationIds: [
+            "barcelona",
+            "niza",
+            "la-spezia",
+            "rome",
+            "naples",
+            "katakolon",
+            "Kusadasi",
+            "santorini",
+            "pireo"
+        ],
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        difficulty: "easy",
+        idealFor: [
+            "Primer crucero",
+            "Ritmo tranquilo",
+            "Cultura y gastronomía"
+        ],
+        highlights: [
+            "El Coliseo",
+            "Costa Azul",
+            "Costa Amalfitana"
+        ],
+        image: "/images/italy_turquia-grecia.png"
+    },
+    {
         id: "iberia-morocco",
-        name: "Iberia y Marruecos",
+        name: "España y Marruecos",
         score: 9.1,
         durationMin: 8,
         durationMax: 12,
@@ -557,6 +601,265 @@ const cities = [
             "Estrecho de Gibraltar"
         ],
         coverImage: "/cities/tangier.webp"
+    },
+    {
+        id: "barcelona",
+        name: "Barcelona",
+        countryId: "spain",
+        latitude: 41.3851,
+        longitude: 2.1734,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 10,
+        historyScore: 9,
+        temperatureSummer: 28,
+        temperatureSpring: 20,
+        recommendedHours: 8,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad vibrante donde modernismo, playa y vida urbana se combinan. El puerto es uno de los principales hubs de cruceros del Mediterráneo.",
+        highlights: [
+            "Sagrada Familia",
+            "Barrio Gótico",
+            "Las Ramblas",
+            "Parc Güell"
+        ],
+        coverImage: "/cities/barcelona.webp"
+    },
+    {
+        id: "niza",
+        name: "Niza",
+        countryId: "france",
+        latitude: 43.7102,
+        longitude: 7.2620,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 9,
+        historyScore: 7,
+        temperatureSummer: 27,
+        temperatureSpring: 19,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Elegante ciudad de la Costa Azul con paseo marítimo icónico, arquitectura francesa clásica y ambiente mediterráneo relajado.",
+        highlights: [
+            "Promenade des Anglais",
+            "Casco antiguo (Vieux Nice)",
+            "Colina del Castillo"
+        ],
+        coverImage: "/cities/nice.webp"
+    },
+    {
+        id: "katakolon",
+        name: "Katákolon",
+        countryId: "greece",
+        latitude: 37.6415,
+        longitude: 21.3180,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 10,
+        temperatureSummer: 30,
+        temperatureSpring: 22,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Pequeño puerto griego conocido como puerta de entrada a la antigua Olimpia, uno de los sitios arqueológicos más importantes del mundo.",
+        highlights: [
+            "Ancient Olympia",
+            "Puerto de Katákolon",
+            "Playas cercanas"
+        ],
+        coverImage: "/cities/katakolon.webp"
+    },
+    {
+        id: "pireo",
+        name: "Pireo (Atenas)",
+        countryId: "greece",
+        latitude: 37.9429,
+        longitude: 23.6469,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 7,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 32,
+        temperatureSpring: 24,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Atenas y punto de acceso a la Acrópolis y la historia clásica de Grecia. Mezcla de puerto moderno y cultura milenaria.",
+        highlights: [
+            "Acrópolis de Atenas",
+            "Plaka",
+            "Puerto de Mikrolimano"
+        ],
+        coverImage: "/cities/piraeus.webp"
+    },
+    {
+        id: "corfu",
+        name: "Corfu",
+        countryId: "greece",
+        latitude: 39.6243,
+        longitude: 19.9217,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 31,
+        temperatureSpring: 21,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Isla griega famosa por sus playas, arquitectura veneciana y ambiente relajado. Es una escala habitual de cruceros en el mar Jónico.",
+        highlights: [
+            "Old Town",
+            "Old Fortress",
+            "Liston Promenade",
+            "Paleokastritsa"
+        ],
+        coverImage: "/cities/corfu.webp"
+    },
+    {
+        id: "kotor",
+        name: "Kotor",
+        countryId: "montenegro",
+        latitude: 42.4247,
+        longitude: 18.7712,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 10,
+        foodScore: 8,
+        historyScore: 9,
+        temperatureSummer: 30,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad medieval amurallada situada en una espectacular bahía rodeada de montañas. Uno de los destinos más pintorescos del Adriático.",
+        highlights: [
+            "Old Town",
+            "Kotor Fortress",
+            "Bay of Kotor",
+            "St. Tryphon Cathedral"
+        ],
+        coverImage: "/cities/kotor.webp"
+    },
+    {
+        id: "zadar",
+        name: "Zadar",
+        countryId: "croatia",
+        latitude: 44.1194,
+        longitude: 15.2314,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 30,
+        temperatureSpring: 21,
+        recommendedHours: 5,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Histórica ciudad costera croata conocida por su casco antiguo romano y sus innovadoras instalaciones frente al mar.",
+        highlights: [
+            "Sea Organ",
+            "Greeting to the Sun",
+            "Roman Forum",
+            "St. Donatus Church"
+        ],
+        coverImage: "/cities/zadar.webp"
+    },
+    {
+        id: "koper",
+        name: "Koper",
+        countryId: "slovenia",
+        latitude: 45.5481,
+        longitude: 13.7302,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 7,
+        temperatureSummer: 29,
+        temperatureSpring: 19,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Eslovenia, con un pequeño casco histórico de influencia veneciana y acceso rápido a la costa adriática.",
+        highlights: [
+            "Tito Square",
+            "Praetorian Palace",
+            "Cathedral of the Assumption",
+            "Koper Promenade"
+        ],
+        coverImage: "/cities/koper.webp"
+    },
+    {
+        id: "ravenna",
+        name: "Ravenna",
+        countryId: "italy",
+        latitude: 44.4184,
+        longitude: 12.2035,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 31,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad italiana célebre por sus impresionantes mosaicos bizantinos y sus monumentos declarados Patrimonio de la Humanidad.",
+        highlights: [
+            "Basilica di San Vitale",
+            "Mausoleum of Galla Placidia",
+            "Basilica di Sant'Apollinare Nuovo",
+            "Dante's Tomb"
+        ],
+        coverImage: "/cities/ravenna.webp"
     }
 ];
 }),
@@ -900,7 +1203,7 @@ function TributeSection({ photos }) {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Sabemos que ahora estáis en un momento delicado por temas médicos, operaciones de rodilla, etc. Así que aún no os hemos comprado nada; esto es un recordatorio para que miréis con tranquilidad adónde os gustaría ir y ver."
+                                        children: "Sabemos que ahora estáis en un momento delicado por temas médicos, operaciones de rodilla, etc. Así que aún no os hemos comprado nada, esto es un recordatorio para que miréis con tranquilidad a dónde os gustaría ir y que ver."
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/home/components/TributeSection.tsx",
                                         lineNumber: 103,
@@ -920,6 +1223,22 @@ function TributeSection({ photos }) {
                                         fileName: "[project]/src/features/home/components/TributeSection.tsx",
                                         lineNumber: 113,
                                         columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "font-medium text-foreground",
+                                        children: "..."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/home/components/TributeSection.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "font-style: italic",
+                                        children: "Con cariño: Sergio y Daniel"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/features/home/components/TributeSection.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -932,7 +1251,7 @@ function TributeSection({ photos }) {
                                 children: "“El mejor viaje es el que aún no habéis vivido.”"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/home/components/TributeSection.tsx",
-                                lineNumber: 118,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -947,16 +1266,16 @@ function TributeSection({ photos }) {
                             photos: photos
                         }, void 0, false, {
                             fileName: "[project]/src/features/home/components/TributeSection.tsx",
-                            lineNumber: 126,
+                            lineNumber: 133,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ColltagePlaceholder, {}, void 0, false, {
                             fileName: "[project]/src/features/home/components/TributeSection.tsx",
-                            lineNumber: 128,
+                            lineNumber: 135,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/home/components/TributeSection.tsx",
-                        lineNumber: 124,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this)
                 ]
