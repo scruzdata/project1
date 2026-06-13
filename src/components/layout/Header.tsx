@@ -44,7 +44,7 @@ export function Header() {
               strokeWidth={1.5}
             />
             <span className="font-heading text-base md:text-lg font-semibold tracking-tight leading-none">
-              Nuestra Gran Aventura
+              Regalo Jubilación
             </span>
           </Link>
 

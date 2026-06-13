@@ -78,7 +78,7 @@ export function MobileNav({ className }: MobileNavProps) {
                   className="font-heading text-base font-semibold"
                   onClick={() => setOpen(false)}
                 >
-                  Nuestra Gran Aventura
+                  Regalo Jubilación
                 </Link>
                 <button
                   onClick={() => setOpen(false)}

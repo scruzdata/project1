@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///app/src/app/favorites/page.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = { title: \"Favoritos\" };\n\nexport default function FavoritesPage() {\n  return (\n    <>\n      <section className=\"section-sm border-b border-border bg-muted/20\">\n        <div className=\"container-site\">\n          <p className=\"eyebrow mb-3\">Tu colección</p>\n          <h1 className=\"heading-1 mb-4\">Favoritos</h1>\n          <p className=\"lead max-w-2xl\">\n            Guarda los destinos e itinerarios que más os ilusionen para\n            tenerlos siempre a mano.\n          </p>\n        </div>\n      </section>\n\n      <section className=\"section\">\n        <div className=\"container-site\">\n          <p className=\"text-muted-foreground\">Próximamente.</p>\n        </div>\n      </section>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;AAEO,MAAM,WAAqB;IAAE,OAAO;AAAY;AAExC,SAAS;IACtB,qBACE;;0BACE,8OAAC;gBAAQ,WAAU;0BACjB,cAAA,8OAAC;oBAAI,WAAU;;sCACb,8OAAC;4BAAE,WAAU;sCAAe;;;;;;sCAC5B,8OAAC;4BAAG,WAAU;sCAAiB;;;;;;sCAC/B,8OAAC;4BAAE,WAAU;sCAAiB;;;;;;;;;;;;;;;;;0BAOlC,8OAAC;gBAAQ,WAAU;0BACjB,cAAA,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;wBAAE,WAAU;kCAAwB;;;;;;;;;;;;;;;;;;AAK/C","debugId":null}}]
+}

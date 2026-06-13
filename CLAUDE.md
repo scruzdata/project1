@@ -45,7 +45,7 @@ Avoid unnecessary complexity.
 
 Favor maintainability and readability.
 
-You are working inside a Next.js 15 + TypeScript project called "Nuestra Gran Aventura".
+You are working inside a Next.js 15 + TypeScript project called "Regalo Jubilación".
 
 This project is connected to MCP tools (21st.dev + Claude Code environment).
 

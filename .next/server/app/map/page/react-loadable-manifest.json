@@ -1,0 +1,11 @@
+{
+  "[project]/src/features/map/components/InteractiveMap.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/features/map/components/InteractiveMap.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_leaflet_dist_leaflet_ef5f0413.css",
+      "static/chunks/node_modules_aa06b1bf._.js",
+      "static/chunks/src_features_map_components_c67bf1e5._.js",
+      "static/chunks/src_features_map_components_InteractiveMap_tsx_1e2d88d8._.js"
+    ]
+  }
+}

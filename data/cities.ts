@@ -16,8 +16,8 @@ export const cities: City[] = [
     temperatureSpring: 23,
     recommendedHours: 8,
     bestMonths: [5, 6, 9, 10],
-    description: "The most iconic island in Greece, famous for white-washed villages and dramatic caldera views.",
-    highlights: ["Oia", "Fira", "Blue domes"],
+    description: "La isla más icónica de Grecia, famosa por sus pueblos encalados y las dramáticas vistas a la caldera.",
+    highlights: ["Oia", "Fira", "Cúpulas azules"],
     coverImage: "/cities/santorini.webp",
   },
   {
@@ -35,8 +35,8 @@ export const cities: City[] = [
     temperatureSpring: 22,
     recommendedHours: 6,
     bestMonths: [5, 6, 9, 10],
-    description: "Cosmopolitan Cycladic island with charming windmills, golden beaches and a vibrant waterfront.",
-    highlights: ["Little Venice", "Windmills", "Paradise Beach"],
+    description: "Isla cicládica cosmopolita con encantadores molinos de viento, playas doradas y un animado paseo marítimo.",
+    highlights: ["Pequeña Venecia", "Molinos de viento", "Playa Paradise"],
     coverImage: "/cities/mykonos.webp",
   },
   {

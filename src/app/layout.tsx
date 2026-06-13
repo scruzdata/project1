@@ -7,8 +7,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Nuestra Gran Aventura",
-    template: "%s · Nuestra Gran Aventura",
+    default: "Regalo Jubilación",
+    template: "%s · Regalo Jubilación",
   },
   description:
     "Explora cruceros, destinos y rutas para el viaje de tu vida. Un regalo hecho con amor.",

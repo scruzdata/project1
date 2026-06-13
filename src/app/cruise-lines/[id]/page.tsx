@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -31,49 +32,66 @@ export default async function CruiseLineDetailPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="section-sm border-b border-border bg-muted/20">
-        <div className="container-site">
-          <Link
-            href="/cruise-lines"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 mb-8"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Todas las compañías
-          </Link>
+      <section className="relative border-b border-border overflow-hidden">
+        {/* Background image */}
+        {cl.image && (
+          <div className="absolute inset-0">
+            <Image
+              src={cl.image}
+              alt={cl.name}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/30" />
+          </div>
+        )}
 
-          <div className="flex flex-col md:flex-row md:items-end gap-6 justify-between">
-            <div className="space-y-3">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground">
-                  {categoryLabel[cl.category]}
-                </span>
-                <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground">
-                  {atmosphereLabelShort[cl.atmosphere]}
-                </span>
-                {cl.recommended && (
-                  <span className="inline-flex items-center rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent">
-                    Nuestra elección
+        <div className={cl.image ? "relative section-sm" : "section-sm bg-muted/20"}>
+          <div className="container-site">
+            <Link
+              href="/cruise-lines"
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 mb-8"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Todas las compañías
+            </Link>
+
+            <div className="flex flex-col md:flex-row md:items-end gap-6 justify-between">
+              <div className="space-y-3">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground">
+                    {categoryLabel[cl.category]}
                   </span>
-                )}
+                  <span className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground">
+                    {atmosphereLabelShort[cl.atmosphere]}
+                  </span>
+                  {cl.recommended && (
+                    <span className="inline-flex items-center rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent">
+                      Nuestra elección
+                    </span>
+                  )}
+                </div>
+                <h1 className="heading-1">{cl.name}</h1>
+                <a
+                  href={cl.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  Sitio oficial
+                </a>
               </div>
-              <h1 className="heading-1">{cl.name}</h1>
-              <a
-                href={cl.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
-              >
-                <ExternalLink className="h-3.5 w-3.5" />
-                Sitio oficial
-              </a>
-            </div>
 
-            {/* Overall score */}
-            <div className="flex flex-col items-center justify-center rounded-3xl bg-accent/10 px-10 py-6 shrink-0">
-              <span className="font-heading text-5xl font-bold text-accent leading-none">
-                {cl.overallScore.toFixed(1)}
-              </span>
-              <span className="caption mt-1.5">Puntuación global</span>
+              {/* Overall score */}
+              <div className="flex flex-col items-center justify-center rounded-3xl bg-accent/10 px-10 py-6 shrink-0">
+                <span className="font-heading text-5xl font-bold text-accent leading-none">
+                  {cl.overallScore.toFixed(1)}
+                </span>
+                <span className="caption mt-1.5">Puntuación global</span>
+              </div>
             </div>
           </div>
         </div>

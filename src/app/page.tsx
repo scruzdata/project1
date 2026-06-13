@@ -4,7 +4,7 @@ import { itineraries } from "@/data/itineraries";
 import { cities } from "@/data/cities";
 import { HeroSection } from "@/features/home/components/HeroSection";
 
-export const metadata: Metadata = { title: "Nuestra Gran Aventura" };
+export const metadata: Metadata = { title: "Regalo Jubilación" };
 
 export default function HomePage() {
   const featured = [...itineraries].sort((a, b) => b.score - a.score).slice(0, 3);
@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <HeroSection />
+      <HeroSection backgroundImage="/images/hero.jpg" />
 
       {/* ── Featured itineraries ─────────────────────────────── */}
       <section className="section">

@@ -11,7 +11,7 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  eyebrow = "Nuestra Gran Aventura",
+  eyebrow = "Regalo Jubilación",
   heading = "El viaje que siempre habéis soñado",
   lead = "Un crucero diseñado para dos. Elegante, relajado y lleno de momentos que recordaréis siempre.",
   primaryCta = { label: "Ver rutas", href: "/itineraries" },

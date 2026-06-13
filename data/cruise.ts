@@ -39,5 +39,7 @@ export interface CruiseLine {
 
   logo: string;
 
+  image?: string;
+
   website: string;
 }

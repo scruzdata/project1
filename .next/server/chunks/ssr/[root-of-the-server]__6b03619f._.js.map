@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///app/src/app/budget/page.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = { title: \"Presupuesto\" };\n\nexport default function BudgetPage() {\n  return (\n    <section className=\"section\">\n      <div className=\"container-site\">\n        <p className=\"eyebrow mb-3\">Planificación</p>\n        <h1 className=\"heading-1 mb-4\">Presupuesto</h1>\n        <p className=\"lead max-w-2xl\">Próximamente.</p>\n      </div>\n    </section>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;AAEO,MAAM,WAAqB;IAAE,OAAO;AAAc;AAE1C,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;kBACjB,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAE,WAAU;8BAAe;;;;;;8BAC5B,8OAAC;oBAAG,WAAU;8BAAiB;;;;;;8BAC/B,8OAAC;oBAAE,WAAU;8BAAiB;;;;;;;;;;;;;;;;;AAItC","debugId":null}}]
+}

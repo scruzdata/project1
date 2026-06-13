@@ -20,7 +20,7 @@ export function Footer() {
             >
               <Compass className="h-5 w-5 text-accent" strokeWidth={1.5} />
               <span className="font-heading text-lg font-semibold tracking-tight">
-                Nuestra Gran Aventura
+                Regalo Jubilación
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
@@ -74,7 +74,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-border py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            © {year} Nuestra Gran Aventura — Hecho con amor.
+            © {year} Regalo Jubilación — Hecho con amor.
           </p>
           <p className="text-xs text-muted-foreground italic">
             ¡Bienvenidos a la gran aventura!

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, Star } from "lucide-react";
 import type { CruiseLine } from "@/types";
@@ -13,10 +14,26 @@ export function CruiseLineCard({ cruiseLine }: CruiseLineCardProps) {
     <Link href={`/cruise-lines/${cruiseLine.id}`} className="block h-full group">
       <article
         className={cn(
-          "card-elevated h-full flex flex-col gap-5 p-6",
+          "card-elevated h-full flex flex-col overflow-hidden",
           cruiseLine.recommended && "ring-1 ring-accent/40"
         )}
       >
+        {/* Image */}
+        {cruiseLine.image && (
+          <div className="relative aspect-[16/9] w-full shrink-0 overflow-hidden bg-muted">
+            <Image
+              src={cruiseLine.image}
+              alt={cruiseLine.name}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        )}
+
+        {/* Body */}
+        <div className="flex flex-col gap-5 p-6 flex-1">
+
         {/* Header */}
         <div className="flex items-start justify-between gap-3">
           <div className="space-y-1.5 min-w-0">
@@ -64,6 +81,8 @@ export function CruiseLineCard({ cruiseLine }: CruiseLineCardProps) {
         <div className="flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 group-hover:gap-2.5">
           <span>Ver detalles</span>
           <span aria-hidden="true">→</span>
+        </div>
+
         </div>
       </article>
     </Link>

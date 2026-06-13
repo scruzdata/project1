@@ -47,7 +47,7 @@ export default function CalendarPage() {
       <section className="section border-t border-border bg-muted/20">
         <div className="container-site space-y-8">
           <div>
-            <p className="eyebrow mb-2">Los 12 meses</p>
+            <p className="eyebrow mb-2">Abril – Octubre</p>
             <h2 className="heading-2">Elige tu mes y descubre el detalle</h2>
             <p className="lead mt-3 max-w-xl">
               Pulsa cualquier mes para ver el desglose completo de puntuaciones,
@@ -64,7 +64,7 @@ export default function CalendarPage() {
         <div className="container-site space-y-10">
           <div>
             <p className="eyebrow mb-2">Comparativa</p>
-            <h2 className="heading-2">Todos los meses de un vistazo</h2>
+            <h2 className="heading-2">Abril a octubre de un vistazo</h2>
             <p className="lead mt-3 max-w-xl">
               Temperatura, tranquilidad, precio y estado del mar: las cuatro
               dimensiones que determinan la calidad de cada mes.

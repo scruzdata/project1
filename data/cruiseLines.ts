@@ -26,24 +26,26 @@ valueScore: 8.9,
 averagePassengerAge: "50-70",
 
 idealFor: [
-"Retired couples",
-"First cruise",
-"Relaxed travel"
+"Parejas jubiladas",
+"Primer crucero",
+"Viaje relajado"
 ],
 
 strengths: [
-"Excellent food",
-"Premium atmosphere",
-"Modern ships"
+"Excelente gastronomía",
+"Ambiente premium",
+"Barcos modernos"
 ],
 
 weaknesses: [
-"Higher prices"
+"Precios elevados"
 ],
 
 recommended: true,
 
 logo: "/logos/celebrity.svg",
+
+image: "/images/cruises/celebrity-cruises-barco.jpg",
 
 website: "https://www.celebritycruises.com"
 },
@@ -92,6 +94,8 @@ website: "https://www.celebritycruises.com"
 
   logo: "/logos/oceania.svg",
 
+  image: "/images/cruises/oceania-cruises.jpg",
+
   website: "https://www.oceaniacruises.com"
 },
 {
@@ -139,6 +143,8 @@ website: "https://www.celebritycruises.com"
 
   logo: "/logos/regent.svg",
 
+  image: "/images/cruises/regent_seven.jpg",
+
   website: "https://www.rssc.com"
 },
 {
@@ -185,6 +191,8 @@ website: "https://www.celebritycruises.com"
   recommended: false,
 
   logo: "/logos/silversea.svg",
+
+  image: "/images/cruises/silversea.jpg",
 
   website: "https://www.silversea.com"
 },
@@ -234,7 +242,9 @@ website: "https://www.celebritycruises.com"
 
   logo: "/logos/msc.svg",
 
-  website: "https://www.msccruises.es"
+  image: "/images/cruises/msc-cruceros.jpg",
+
+  website: "https://www.msccruceros.es/"
 },
 {
   id: "costa",
@@ -282,6 +292,8 @@ website: "https://www.celebritycruises.com"
 
   logo: "/logos/costa.svg",
 
-  website: "https://www.costacruises.es"
+  image: "/images/cruises/costa_crucero.webp",
+
+  website: "https://www.costacruceros.es/"
 }
 ];

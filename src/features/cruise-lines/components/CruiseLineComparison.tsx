@@ -38,10 +38,15 @@ export function CruiseLineComparison({ cruiseLines }: CruiseLineComparisonProps)
       )}
 
       {/* Metric rows */}
-      <div className="space-y-6">
-        {fields.map(({ key, label }, metricIdx) => (
-          <div key={key} className="space-y-2">
-            <p className="text-sm text-muted-foreground">{label}</p>
+      <div className="space-y-2">
+        {fields.map(({ key, label, icon: Icon }, metricIdx) => (
+          <div key={key} className="rounded-xl border border-border bg-muted/30 px-5 py-4 space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="flex items-center justify-center rounded-lg bg-accent/10 p-1.5 shrink-0">
+                <Icon className="h-4 w-4 text-accent" strokeWidth={1.75} />
+              </span>
+              <p className="text-sm font-semibold text-foreground">{label}</p>
+            </div>
 
             <div className={cn("space-y-2", !multi && "space-y-1.5")}>
               {cruiseLines.map((cl, lineIdx) => {
@@ -86,3 +91,4 @@ export function CruiseLineComparison({ cruiseLines }: CruiseLineComparisonProps)
     </div>
   );
 }
+
