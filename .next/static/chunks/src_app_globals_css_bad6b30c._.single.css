@@ -1182,6 +1182,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -1260,10 +1264,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-px {
   height: 1px;
-}
-
-.h-14 {
-  height: 3.5rem;
 }
 
 .min-h-\[48px\] {
@@ -1546,6 +1546,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -1576,10 +1580,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-5 {
@@ -1672,16 +1672,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .divide-x > :not([hidden]) ~ :not([hidden]) {
@@ -1716,6 +1716,10 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
+.rounded {
+  border-radius: .25rem;
+}
+
 .rounded-2xl {
   border-radius: calc(var(--radius)  + 8px);
 }
@@ -1738,10 +1742,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .rounded-xl {
   border-radius: calc(var(--radius)  + 4px);
-}
-
-.rounded {
-  border-radius: .25rem;
 }
 
 .border {
@@ -2146,6 +2146,10 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+.p-1\.5 {
+  padding: .375rem;
+}
+
 .p-2 {
   padding: .5rem;
 }
@@ -2166,13 +2170,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1.5rem;
 }
 
-.p-1\.5 {
-  padding: .375rem;
-}
-
 .px-1 {
   padding-left: .25rem;
   padding-right: .25rem;
+}
+
+.px-1\.5 {
+  padding-left: .375rem;
+  padding-right: .375rem;
 }
 
 .px-10 {
@@ -2218,6 +2223,11 @@ h1, h2, h3, h4, h5, h6 {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-0\.5 {
@@ -2283,16 +2293,6 @@ h1, h2, h3, h4, h5, h6 {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-1\.5 {
-  padding-left: .375rem;
-  padding-right: .375rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-12 {
@@ -2514,6 +2514,10 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--accent) / .15);
 }
 
+.text-accent\/60 {
+  color: hsl(var(--accent) / .6);
+}
+
 .text-accent\/80 {
   color: hsl(var(--accent) / .8);
 }
@@ -2672,10 +2676,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-white\/90 {
   color: rgba(255, 255, 255, .9);
-}
-
-.text-accent\/60 {
-  color: hsl(var(--accent) / .6);
 }
 
 .opacity-40 {
@@ -3264,16 +3264,16 @@ path.route-active {
     width: 20rem;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-20 {
