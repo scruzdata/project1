@@ -1,15 +1,73 @@
 import Image from "next/image";
-import { Heart } from "lucide-react";
+import { Heart, Images } from "lucide-react";
 
-interface TributeSectionProps {
-  imageSrc?: string;
-  imageAlt?: string;
+interface Photo {
+  src: string;
+  alt?: string;
 }
 
-export function TributeSection({
-  imageSrc,
-  imageAlt = "Nuestra familia",
-}: TributeSectionProps) {
+interface TributeSectionProps {
+  photos?: Photo[];
+}
+
+function PhotoCollage({ photos }: { photos: Photo[] }) {
+  if (photos.length === 1) {
+    return (
+      <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-border/40">
+        <Image
+          src={photos[0].src}
+          alt={photos[0].alt ?? "Familia"}
+          width={900}
+          height={900}
+          className="w-full h-auto block"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+      </div>
+    );
+  }
+
+  const cols = photos.length === 2 ? "columns-2" : "columns-2";
+
+  return (
+    <div className={`${cols} gap-2`}>
+      {photos.map((p, i) => (
+        <div
+          key={i}
+          className="break-inside-avoid mb-2 rounded-xl overflow-hidden shadow-md ring-1 ring-border/40"
+        >
+          <Image
+            src={p.src}
+            alt={p.alt ?? "Familia"}
+            width={900}
+            height={900}
+            className="w-full h-auto block"
+            sizes="(max-width: 1024px) 50vw, 25vw"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ColltagePlaceholder() {
+  return (
+    <div className="columns-2 gap-2">
+      <div className="break-inside-avoid mb-2 aspect-[3/4] rounded-xl border-2 border-dashed border-border bg-card flex flex-col items-center justify-center gap-3 text-muted-foreground text-center px-4">
+        <Images className="w-8 h-8 text-accent/50" aria-hidden />
+        <p className="text-xs font-medium text-foreground/50">Tus fotos aquí</p>
+      </div>
+      {[2, 3, 4, 5, 6].map((n) => (
+        <div key={n} className="break-inside-avoid mb-2 aspect-square rounded-xl border-2 border-dashed border-border bg-card flex items-center justify-center">
+          <p className="text-[11px] text-foreground/40">Foto {n}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export function TributeSection({ photos }: TributeSectionProps) {
+  const hasPhotos = photos && photos.length > 0;
+
   return (
     <section className="section border-t border-border bg-muted/20">
       <div className="container-site">
@@ -43,8 +101,14 @@ export function TributeSection({
                 juntos sin más agenda que la felicidad.
               </p>
               <p>
-                Sabemos que ahora estais en un momento delicado por temas médicos
-                operaciones de rodilla, etc.... asique aun no os hemos comprado nada, esto es un recordatorio para que mireis con tranquilidad a donde os gustaria ir y ver. Cuando el tiempo, medicos y el fisico os acompañe solo teneis que decirnos que quereis y nosotros nos encargaremos todo. 
+                Sabemos que ahora estáis en un momento delicado por temas médicos,
+                operaciones de rodilla, etc. Así que aún no os hemos comprado nada;
+                esto es un recordatorio para que miréis con tranquilidad adónde os
+                gustaría ir y ver.
+              </p>
+              <p>
+                Cuando el tiempo, los médicos y el físico os acompañen, solo tenéis
+                que decirnos qué queréis y nosotros nos encargaremos de todo.
               </p>
               <p className="font-medium text-foreground">
                 Os lo merecéis. Todo esto y mucho más.
@@ -56,37 +120,12 @@ export function TributeSection({
             </p>
           </div>
 
-          {/* ── Image ─────────────────────────────────────────── */}
+          {/* ── Collage ───────────────────────────────────────── */}
           <div className="order-1 lg:order-2">
-            {imageSrc ? (
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl ring-1 ring-border/40">
-                <Image
-                  src={imageSrc}
-                  alt={imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+            {hasPhotos ? (
+              <PhotoCollage photos={photos!} />
             ) : (
-              <div className="aspect-[4/3] rounded-2xl border-2 border-dashed border-border bg-card flex flex-col items-center justify-center gap-4 text-muted-foreground px-8 text-center">
-                <div className="w-14 h-14 rounded-full bg-muted flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-accent/60" aria-hidden />
-                </div>
-                <div className="space-y-1">
-                  <p className="text-sm font-medium text-foreground/60">
-                    Añade una foto familiar
-                  </p>
-                  <p className="text-xs leading-relaxed">
-                    Pasa la prop{" "}
-                    <code className="px-1.5 py-0.5 rounded bg-muted font-mono text-[11px]">
-                      imageSrc
-                    </code>{" "}
-                    a <code className="px-1.5 py-0.5 rounded bg-muted font-mono text-[11px]">TributeSection</code> en{" "}
-                    <code className="px-1.5 py-0.5 rounded bg-muted font-mono text-[11px]">page.tsx</code>
-                  </p>
-                </div>
-              </div>
+              <ColltagePlaceholder />
             )}
           </div>
 

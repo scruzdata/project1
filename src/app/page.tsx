@@ -17,8 +17,14 @@ export default function HomePage() {
 
       {/* ── Tribute ──────────────────────────────────────────── */}
       <TributeSection
-        // imageSrc="/images/familia.jpg"
-        // imageAlt="Papá y mamá"
+        photos={[
+          { src: "/images/family/family1.png", alt: "" },
+          { src: "/images/family/family2.png", alt: "" },
+          { src: "/images/family/family3.png", alt: "" },
+          { src: "/images/family/family4.png", alt: "" },
+          { src: "/images/family/family5.png", alt: "" },
+          { src: "/images/family/family6.png", alt: "" },
+        ]}
       />
 
       {/* ── Featured itineraries ─────────────────────────────── */}
