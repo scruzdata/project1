@@ -1,0 +1,412 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   CSS Custom Properties
+   Light mode: navy primary, gold accent
+   Dark mode:  navy canvas, gold primary
+───────────────────────────────────────────── */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 53% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 53% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 53% 13%;
+
+    --primary: 213 52% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 30% 95%;
+    --secondary-foreground: 213 52% 24%;
+
+    --muted: 214 32% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 43 65% 52%;
+    --accent-foreground: 213 53% 13%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 52% 24%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 213 57% 7%;
+    --foreground: 210 40% 96%;
+
+    --card: 213 53% 11%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 213 53% 11%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 43 65% 52%;
+    --primary-foreground: 213 57% 7%;
+
+    --secondary: 213 40% 16%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 213 40% 16%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 43 65% 52%;
+    --accent-foreground: 213 53% 13%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border: 213 35% 18%;
+    --input: 213 35% 18%;
+    --ring: 43 65% 52%;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Base Styles
+───────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Typography Utilities
+───────────────────────────────────────────── */
+@layer components {
+  .heading-display {
+    @apply font-heading text-display-sm md:text-display font-semibold leading-[1.08] tracking-tight;
+  }
+
+  .heading-1 {
+    @apply font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-semibold leading-tight tracking-tight;
+  }
+
+  .heading-2 {
+    @apply font-heading text-3xl md:text-4xl font-semibold leading-snug tracking-tight;
+  }
+
+  .heading-3 {
+    @apply font-heading text-2xl md:text-3xl font-medium leading-snug;
+  }
+
+  .heading-4 {
+    @apply font-heading text-xl md:text-2xl font-medium leading-snug;
+  }
+
+  /* Small uppercase label above a heading */
+  .eyebrow {
+    @apply text-xs font-body font-semibold uppercase tracking-[0.15em] text-accent;
+  }
+
+  /* Intro paragraph */
+  .lead {
+    @apply text-lg md:text-xl text-muted-foreground leading-relaxed;
+  }
+
+  /* Metadata / timestamps / labels */
+  .caption {
+    @apply text-xs font-body tracking-wide text-muted-foreground;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Layout Utilities
+───────────────────────────────────────────── */
+@layer components {
+  .container-site {
+    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-site;
+  }
+
+  .container-content {
+    @apply mx-auto w-full px-4 sm:px-6 max-w-content;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full px-4 sm:px-6 max-w-narrow;
+  }
+
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .section-sm {
+    @apply py-10 md:py-16;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Card Variants
+───────────────────────────────────────────── */
+@layer components {
+  .card {
+    @apply bg-card text-card-foreground rounded-2xl border border-border shadow-card;
+  }
+
+  .card-elevated {
+    @apply bg-card text-card-foreground rounded-2xl border border-border shadow-card;
+    @apply transition-all duration-300 ease-premium;
+    @apply hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  /* Frosted glass — use over photos or dark backgrounds */
+  .card-glass {
+    @apply rounded-2xl border border-white/10;
+    @apply bg-white/10 backdrop-blur-md;
+    @apply dark:bg-white/5 dark:border-white/5;
+  }
+
+  .card-photo {
+    @apply relative overflow-hidden rounded-2xl;
+  }
+
+  .card-stat {
+    @apply card flex flex-col items-center justify-center gap-1 p-6 text-center;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Button Variants
+───────────────────────────────────────────── */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-body font-medium;
+    @apply transition-all duration-200 ease-premium;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+    @apply disabled:pointer-events-none disabled:opacity-50;
+    @apply select-none cursor-pointer;
+  }
+
+  .btn-sm { @apply btn px-4 py-2 text-xs; }
+  .btn-md { @apply btn px-6 py-3 text-sm; }
+  .btn-lg { @apply btn px-8 py-4 text-base; }
+
+  /* Navy fill */
+  .btn-primary {
+    @apply btn-md bg-primary text-primary-foreground shadow-navy;
+    @apply hover:brightness-110 active:brightness-90;
+  }
+
+  /* Outlined */
+  .btn-secondary {
+    @apply btn-md border border-border bg-transparent text-foreground;
+    @apply hover:bg-secondary;
+  }
+
+  /* Transparent */
+  .btn-ghost {
+    @apply btn-md bg-transparent text-foreground;
+    @apply hover:bg-muted;
+  }
+
+  /* Gold accent — primary CTAs */
+  .btn-gold {
+    @apply btn-md bg-accent text-accent-foreground shadow-gold;
+    @apply hover:brightness-110 active:brightness-90;
+  }
+
+  .btn-icon {
+    @apply btn h-10 w-10 p-0;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Overlay & Gradient Helpers
+───────────────────────────────────────────── */
+@layer components {
+  .photo-overlay {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      to top,
+      rgba(9, 15, 26, 0.88) 0%,
+      rgba(9, 15, 26, 0.45) 45%,
+      transparent 100%
+    );
+  }
+
+  .photo-overlay-soft {
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      to top,
+      rgba(9, 15, 26, 0.65) 0%,
+      transparent 60%
+    );
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(213, 52%, 8%) 0%,
+      hsl(213, 52%, 18%) 100%
+    );
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Score Bar
+───────────────────────────────────────────── */
+@layer components {
+  .score-bar {
+    @apply h-1.5 w-full rounded-full bg-muted overflow-hidden;
+  }
+
+  .score-bar-fill {
+    @apply h-full rounded-full bg-accent transition-all duration-700 ease-premium;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Animation Delay Utilities
+───────────────────────────────────────────── */
+@layer utilities {
+  .delay-75   { animation-delay: 75ms; }
+  .delay-150  { animation-delay: 150ms; }
+  .delay-200  { animation-delay: 200ms; }
+  .delay-300  { animation-delay: 300ms; }
+  .delay-500  { animation-delay: 500ms; }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--muted) / 0.5) 50%,
+      hsl(var(--muted)) 75%
+    );
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Leaflet overrides — match design system
+───────────────────────────────────────────── */
+.leaflet-container {
+  background: hsl(var(--muted));
+  font-family: var(--font-inter), sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: calc(var(--radius) - 2px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  padding: 0;
+  overflow: hidden;
+}
+
+.leaflet-popup-tip {
+  background: hsl(var(--card));
+}
+
+.leaflet-popup-content {
+  margin: 0;
+}
+
+.leaflet-popup-close-button {
+  color: hsl(var(--muted-foreground)) !important;
+  padding: 6px 8px !important;
+  font-size: 16px !important;
+}
+
+.leaflet-control-attribution {
+  background: hsl(var(--background)) !important;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.6rem;
+  padding: 2px 6px;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid hsl(var(--border)) !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.leaflet-control-zoom a {
+  background: hsl(var(--card)) !important;
+  color: hsl(var(--foreground)) !important;
+  border-bottom: 1px solid hsl(var(--border)) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: hsl(var(--muted)) !important;
+}
+
+/* City popup content — styled outside Tailwind since it renders in Leaflet DOM */
+.city-popup-content {
+  padding: 0.75rem 1rem;
+  min-width: 180px;
+  max-width: 240px;
+}
+
+.city-popup-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin: 0 0 0.375rem 0;
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.city-popup-desc {
+  font-size: 0.7rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.55;
+  margin: 0 0 0.5rem 0;
+}
+
+.city-popup-scores {
+  display: flex;
+  gap: 0.625rem;
+  font-size: 0.7rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ─────────────────────────────────────────────
+   Route animations
+───────────────────────────────────────────── */
+@keyframes route-march {
+  from { stroke-dashoffset: 20; }
+  to   { stroke-dashoffset: 0; }
+}
+
+path.route-active {
+  stroke-dasharray: 12 8 !important;
+  animation: route-march 1s linear infinite;
+}
