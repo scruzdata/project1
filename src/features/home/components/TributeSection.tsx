@@ -80,7 +80,7 @@ export function TributeSection({ photos }: TributeSectionProps) {
                 <Heart className="w-3.5 h-3.5 fill-current" aria-hidden />
                 Con todo nuestro amor
               </span>
-              <h2 className="heading-2">Por todo lo que&nbsp;habéis dado</h2>
+              <h2 className="heading-2">Por todo lo que nos&nbsp;habéis dado</h2>
             </div>
 
             {/* Gold divider */}

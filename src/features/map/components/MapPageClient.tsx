@@ -19,7 +19,7 @@ export function MapPageClient({ itineraries, cities }: MapPageClientProps) {
     <div className="flex flex-col md:flex-row h-[calc(100dvh-4rem)] md:h-[calc(100dvh-5rem)] overflow-hidden">
 
       {/* ── Sidebar ─────────────────────────────────────────── */}
-      <aside className="w-full md:w-72 lg:w-80 shrink-0 border-b md:border-b-0 md:border-r border-border bg-card overflow-y-auto">
+      <aside className="w-full md:w-72 lg:w-80 shrink-0 max-h-[40%] md:max-h-none border-b md:border-b-0 md:border-r border-border bg-card overflow-y-auto">
         <div className="p-5 md:p-6 border-b border-border">
           <p className="eyebrow mb-1">Mapa interactivo</p>
           <h1 className="heading-3">Rutas del Mediterráneo</h1>

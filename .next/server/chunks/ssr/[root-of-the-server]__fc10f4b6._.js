@@ -25,11 +25,14 @@ const itineraries = [
             "Atenas"
         ],
         destinationIds: [
+            "pireo",
             "santorini",
-            "mykonos",
-            "rhodes",
-            "kusadasi",
-            "malta"
+            "katakolon",
+            "corfu",
+            "kotor",
+            "zadar",
+            "koper",
+            "ravenna"
         ],
         bestMonths: [
             5,
@@ -61,6 +64,7 @@ const itineraries = [
             "Roma"
         ],
         destinationIds: [
+            "barcelona",
             "palma",
             "marseille",
             "la-spezia",
@@ -97,15 +101,15 @@ const itineraries = [
             "Roma"
         ],
         destinationIds: [
-            "Barcelona",
-            "Niza",
+            "barcelona",
+            "niza",
             "la-spezia",
             "rome",
             "naples",
-            "Katákolon",
-            "Kusadasi (Turquia)",
-            "Santorini (Grecia)",
-            "Pireo(Atenas)"
+            "katakolon",
+            "Kusadasi",
+            "santorini",
+            "pireo"
         ],
         bestMonths: [
             5,

@@ -40,7 +40,7 @@ const cities = [
             "Fira",
             "Cúpulas azules"
         ],
-        coverImage: "/cities/santorini.webp"
+        coverImage: "https://res.cloudinary.com/manawa/image/private/c_fill,g_auto,h_630,w_1200,q_auto/uy2qidhrbntj85537glz"
     },
     {
         id: "mykonos",
@@ -68,7 +68,7 @@ const cities = [
             "Molinos de viento",
             "Playa Paradise"
         ],
-        coverImage: "/cities/mykonos.webp"
+        coverImage: "https://blog.vayacruceros.com/wp-content/uploads/2025/10/visitas-en-la-isla-de-mykonos.jpg"
     },
     {
         id: "rhodes",
@@ -96,7 +96,7 @@ const cities = [
             "Palacio del Gran Maestre",
             "Lindos"
         ],
-        coverImage: "/cities/rhodes.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHVxGtqxt2V3lBc2Buo51cwFtIh7EayHag&s"
     },
     {
         id: "kusadasi",
@@ -124,7 +124,7 @@ const cities = [
             "Biblioteca de Celso",
             "Costa Egea"
         ],
-        coverImage: "/cities/kusadasi.webp"
+        coverImage: "https://www.msccruceros.com.ar/-/media/global-contents/destinations/ports/turkey/kusadasi/kusadasi_visual.jpg?bc=transparent&as=1&mh=930&mw=1640&hash=7AB236ECF232BA8DCE031C2A7E4F984E"
     },
     {
         id: "malta",
@@ -438,6 +438,265 @@ const cities = [
             "Estrecho de Gibraltar"
         ],
         coverImage: "/cities/tangier.webp"
+    },
+    {
+        id: "barcelona",
+        name: "Barcelona",
+        countryId: "spain",
+        latitude: 41.3851,
+        longitude: 2.1734,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 10,
+        historyScore: 9,
+        temperatureSummer: 28,
+        temperatureSpring: 20,
+        recommendedHours: 8,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad vibrante donde modernismo, playa y vida urbana se combinan. El puerto es uno de los principales hubs de cruceros del Mediterráneo.",
+        highlights: [
+            "Sagrada Familia",
+            "Barrio Gótico",
+            "Las Ramblas",
+            "Parc Güell"
+        ],
+        coverImage: "/cities/barcelona.webp"
+    },
+    {
+        id: "niza",
+        name: "Niza",
+        countryId: "france",
+        latitude: 43.7102,
+        longitude: 7.2620,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 9,
+        historyScore: 7,
+        temperatureSummer: 27,
+        temperatureSpring: 19,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Elegante ciudad de la Costa Azul con paseo marítimo icónico, arquitectura francesa clásica y ambiente mediterráneo relajado.",
+        highlights: [
+            "Promenade des Anglais",
+            "Casco antiguo (Vieux Nice)",
+            "Colina del Castillo"
+        ],
+        coverImage: "/cities/nice.webp"
+    },
+    {
+        id: "katakolon",
+        name: "Katákolon",
+        countryId: "greece",
+        latitude: 37.6415,
+        longitude: 21.3180,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 10,
+        temperatureSummer: 30,
+        temperatureSpring: 22,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Pequeño puerto griego conocido como puerta de entrada a la antigua Olimpia, uno de los sitios arqueológicos más importantes del mundo.",
+        highlights: [
+            "Ancient Olympia",
+            "Puerto de Katákolon",
+            "Playas cercanas"
+        ],
+        coverImage: "/cities/katakolon.webp"
+    },
+    {
+        id: "pireo",
+        name: "Pireo (Atenas)",
+        countryId: "greece",
+        latitude: 37.9429,
+        longitude: 23.6469,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 7,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 32,
+        temperatureSpring: 24,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Atenas y punto de acceso a la Acrópolis y la historia clásica de Grecia. Mezcla de puerto moderno y cultura milenaria.",
+        highlights: [
+            "Acrópolis de Atenas",
+            "Plaka",
+            "Puerto de Mikrolimano"
+        ],
+        coverImage: "/cities/piraeus.webp"
+    },
+    {
+        id: "corfu",
+        name: "Corfu",
+        countryId: "greece",
+        latitude: 39.6243,
+        longitude: 19.9217,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 31,
+        temperatureSpring: 21,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Isla griega famosa por sus playas, arquitectura veneciana y ambiente relajado. Es una escala habitual de cruceros en el mar Jónico.",
+        highlights: [
+            "Old Town",
+            "Old Fortress",
+            "Liston Promenade",
+            "Paleokastritsa"
+        ],
+        coverImage: "/cities/corfu.webp"
+    },
+    {
+        id: "kotor",
+        name: "Kotor",
+        countryId: "montenegro",
+        latitude: 42.4247,
+        longitude: 18.7712,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 10,
+        foodScore: 8,
+        historyScore: 9,
+        temperatureSummer: 30,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad medieval amurallada situada en una espectacular bahía rodeada de montañas. Uno de los destinos más pintorescos del Adriático.",
+        highlights: [
+            "Old Town",
+            "Kotor Fortress",
+            "Bay of Kotor",
+            "St. Tryphon Cathedral"
+        ],
+        coverImage: "/cities/kotor.webp"
+    },
+    {
+        id: "zadar",
+        name: "Zadar",
+        countryId: "croatia",
+        latitude: 44.1194,
+        longitude: 15.2314,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 30,
+        temperatureSpring: 21,
+        recommendedHours: 5,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Histórica ciudad costera croata conocida por su casco antiguo romano y sus innovadoras instalaciones frente al mar.",
+        highlights: [
+            "Sea Organ",
+            "Greeting to the Sun",
+            "Roman Forum",
+            "St. Donatus Church"
+        ],
+        coverImage: "/cities/zadar.webp"
+    },
+    {
+        id: "koper",
+        name: "Koper",
+        countryId: "slovenia",
+        latitude: 45.5481,
+        longitude: 13.7302,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 7,
+        temperatureSummer: 29,
+        temperatureSpring: 19,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Eslovenia, con un pequeño casco histórico de influencia veneciana y acceso rápido a la costa adriática.",
+        highlights: [
+            "Tito Square",
+            "Praetorian Palace",
+            "Cathedral of the Assumption",
+            "Koper Promenade"
+        ],
+        coverImage: "/cities/koper.webp"
+    },
+    {
+        id: "ravenna",
+        name: "Ravenna",
+        countryId: "italy",
+        latitude: 44.4184,
+        longitude: 12.2035,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 31,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad italiana célebre por sus impresionantes mosaicos bizantinos y sus monumentos declarados Patrimonio de la Humanidad.",
+        highlights: [
+            "Basilica di San Vitale",
+            "Mausoleum of Galla Placidia",
+            "Basilica di Sant'Apollinare Nuovo",
+            "Dante's Tomb"
+        ],
+        coverImage: "/cities/ravenna.webp"
     }
 ];
 }),

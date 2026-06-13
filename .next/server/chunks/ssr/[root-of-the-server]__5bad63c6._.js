@@ -203,7 +203,7 @@ const cities = [
             "Fira",
             "Cúpulas azules"
         ],
-        coverImage: "/cities/santorini.webp"
+        coverImage: "https://www.manawa.com/es/articles/mejor-epoca-para-visitar-santorini"
     },
     {
         id: "mykonos",

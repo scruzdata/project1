@@ -203,7 +203,7 @@ const cities = [
             "Fira",
             "Cúpulas azules"
         ],
-        coverImage: "/cities/santorini.webp"
+        coverImage: "https://res.cloudinary.com/manawa/image/private/c_fill,g_auto,h_630,w_1200,q_auto/uy2qidhrbntj85537glz"
     },
     {
         id: "mykonos",
@@ -231,7 +231,7 @@ const cities = [
             "Molinos de viento",
             "Playa Paradise"
         ],
-        coverImage: "/cities/mykonos.webp"
+        coverImage: "https://blog.vayacruceros.com/wp-content/uploads/2025/10/visitas-en-la-isla-de-mykonos.jpg"
     },
     {
         id: "rhodes",
@@ -259,7 +259,7 @@ const cities = [
             "Palacio del Gran Maestre",
             "Lindos"
         ],
-        coverImage: "/cities/rhodes.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHVxGtqxt2V3lBc2Buo51cwFtIh7EayHag&s"
     },
     {
         id: "kusadasi",
@@ -287,7 +287,7 @@ const cities = [
             "Biblioteca de Celso",
             "Costa Egea"
         ],
-        coverImage: "/cities/kusadasi.webp"
+        coverImage: "https://www.msccruceros.com.ar/-/media/global-contents/destinations/ports/turkey/kusadasi/kusadasi_visual.jpg?bc=transparent&as=1&mh=930&mw=1640&hash=7AB236ECF232BA8DCE031C2A7E4F984E"
     },
     {
         id: "malta",
@@ -316,7 +316,7 @@ const cities = [
             "Gran Puerto",
             "Mdina"
         ],
-        coverImage: "/cities/malta.webp"
+        coverImage: "https://estaticos-cdn.prensaiberica.es/clip/8bef1f3b-d505-4b12-b7b5-b30428530a86_16-9-discover-aspect-ratio_default_0.jpg"
     },
     {
         id: "palma",
@@ -344,7 +344,7 @@ const cities = [
             "Casco Antiguo",
             "Castillo de Bellver"
         ],
-        coverImage: "/cities/palma.webp"
+        coverImage: "https://abcmallorcastorage.blob.core.windows.net/images/2022/01/palma-mallorca-7-copy.jpg"
     },
     {
         id: "marseille",
@@ -372,7 +372,7 @@ const cities = [
             "Notre-Dame de la Garde",
             "Calanques"
         ],
-        coverImage: "/cities/marseille.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdej55dw-0-jkwvyDyRsCOhRPjVKYo8zZwFA&s"
     },
     {
         id: "la-spezia",
@@ -400,7 +400,7 @@ const cities = [
             "Portovenere",
             "Golfo de La Spezia"
         ],
-        coverImage: "/cities/la-spezia.webp"
+        coverImage: "https://cdn.getyourguide.com/img/tour/63c953e1964fa.jpeg/68.jpg"
     },
     {
         id: "rome",
@@ -428,7 +428,7 @@ const cities = [
             "Ciudad del Vaticano",
             "Fontana di Trevi"
         ],
-        coverImage: "/cities/rome.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWyq_eKnfHFkKRUUDfUE5AVSS-kYfHAg1Tg&s"
     },
     {
         id: "naples",
@@ -456,7 +456,7 @@ const cities = [
             "Costa Amalfitana",
             "Pizza Napoletana"
         ],
-        coverImage: "/cities/naples.webp"
+        coverImage: "https://losviajesdemary.com/wp-content/uploads/2015/10/Imperdibles-de-Napoles.png"
     },
     {
         id: "malaga",
@@ -485,7 +485,7 @@ const cities = [
             "Museo Picasso",
             "Playa La Malagueta"
         ],
-        coverImage: "/cities/malaga.webp"
+        coverImage: "https://content.r9cdn.net/rimg/dimg/ee/b1/8afb451d-city-5309-15cef627e8c.jpg?width=1366&height=768&crop=true&cropStrategy=attention"
     },
     {
         id: "cadiz",
@@ -514,7 +514,7 @@ const cities = [
             "Catedral",
             "Playas del Atlántico"
         ],
-        coverImage: "/cities/cadiz.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iap1U1feg3BAw4kctH5AmE9iP8Ph8vWuQg&s"
     },
     {
         id: "lisbon",
@@ -543,7 +543,7 @@ const cities = [
             "Torre de Belém",
             "Miradores"
         ],
-        coverImage: "/cities/lisbon.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLs1dmhEcFb2P7ykSDEP0Sn7amwxlOnjlUdQ&s"
     },
     {
         id: "porto",
@@ -571,7 +571,7 @@ const cities = [
             "Bodegas de vino",
             "Puente Dom Luís"
         ],
-        coverImage: "/cities/porto.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4hs2CknS8077-OZ7cKelJrtanRAx-RZMXw&s"
     },
     {
         id: "tangier",
@@ -600,7 +600,7 @@ const cities = [
             "Kasbah",
             "Estrecho de Gibraltar"
         ],
-        coverImage: "/cities/tangier.webp"
+        coverImage: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/01/tanger-chefchaouen-888.jpg"
     },
     {
         id: "barcelona",
@@ -629,7 +629,7 @@ const cities = [
             "Las Ramblas",
             "Parc Güell"
         ],
-        coverImage: "/cities/barcelona.webp"
+        coverImage: "https://i0.wp.com/armandotuviaje.blog/wp-content/uploads/2017/06/barcelona1.jpg?fit=1920%2C1080&ssl=1"
     },
     {
         id: "niza",
@@ -657,7 +657,7 @@ const cities = [
             "Casco antiguo (Vieux Nice)",
             "Colina del Castillo"
         ],
-        coverImage: "/cities/nice.webp"
+        coverImage: "https://content-viajes.nationalgeographic.com.es/medio/2025/12/12/adobestock_9015a079_355868025_251212151617_1280x879.webp"
     },
     {
         id: "katakolon",
@@ -685,7 +685,7 @@ const cities = [
             "Puerto de Katákolon",
             "Playas cercanas"
         ],
-        coverImage: "/cities/katakolon.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbnYow6xUe5Bt_yQeyFgoTQIsdBlQLmWFXA&s"
     },
     {
         id: "pireo",
@@ -713,7 +713,7 @@ const cities = [
             "Plaka",
             "Puerto de Mikrolimano"
         ],
-        coverImage: "/cities/piraeus.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcBKjXbC4Xnd_0BAdKjo9hoWtzVmOFW0p_Q&s"
     },
     {
         id: "corfu",
@@ -742,7 +742,7 @@ const cities = [
             "Liston Promenade",
             "Paleokastritsa"
         ],
-        coverImage: "/cities/corfu.webp"
+        coverImage: "https://image.urlaubspiraten.de/640/image/upload/v1603282560/mediavault_images/ogxtfowfm7czsefouxg4.jpg"
     },
     {
         id: "kotor",
@@ -771,7 +771,7 @@ const cities = [
             "Bay of Kotor",
             "St. Tryphon Cathedral"
         ],
-        coverImage: "/cities/kotor.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRuQ1HRUPmN_o-1qRAIlEjPa8xrCDkERfg7g&s"
     },
     {
         id: "zadar",
@@ -800,7 +800,7 @@ const cities = [
             "Roman Forum",
             "St. Donatus Church"
         ],
-        coverImage: "/cities/zadar.webp"
+        coverImage: "https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2017/09/Vistas-de-Zadar.jpg?resize=600%2C400&ssl=1"
     },
     {
         id: "koper",
@@ -829,7 +829,7 @@ const cities = [
             "Cathedral of the Assumption",
             "Koper Promenade"
         ],
-        coverImage: "/cities/koper.webp"
+        coverImage: "https://passporterapp.com/es/blog/eslovenia/que-ver-en-koper/"
     },
     {
         id: "ravenna",
@@ -859,7 +859,7 @@ const cities = [
             "Basilica di Sant'Apollinare Nuovo",
             "Dante's Tomb"
         ],
-        coverImage: "/cities/ravenna.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zRobJ7Dcoq3qWTc3WAyqCqB9bKw28YJ6Wg&s"
     }
 ];
 }),
@@ -1165,7 +1165,7 @@ function TributeSection({ photos }) {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "heading-2",
-                                        children: "Por todo lo que habéis dado"
+                                        children: "Por todo lo que nos habéis dado"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/home/components/TributeSection.tsx",
                                         lineNumber: 83,

@@ -18,7 +18,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "La isla más icónica de Grecia, famosa por sus pueblos encalados y las dramáticas vistas a la caldera.",
     highlights: ["Oia", "Fira", "Cúpulas azules"],
-    coverImage: "/cities/santorini.webp",
+    coverImage: "https://res.cloudinary.com/manawa/image/private/c_fill,g_auto,h_630,w_1200,q_auto/uy2qidhrbntj85537glz",
   },
   {
     id: "mykonos",
@@ -37,7 +37,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "Isla cicládica cosmopolita con encantadores molinos de viento, playas doradas y un animado paseo marítimo.",
     highlights: ["Pequeña Venecia", "Molinos de viento", "Playa Paradise"],
-    coverImage: "/cities/mykonos.webp",
+    coverImage: "https://blog.vayacruceros.com/wp-content/uploads/2025/10/visitas-en-la-isla-de-mykonos.jpg",
   },
   {
     id: "rhodes",
@@ -56,7 +56,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "La Ciudad Vieja medieval de Rodas es Patrimonio de la Humanidad, rodeada de murallas cruzadas.",
     highlights: ["Ciudad Vieja", "Palacio del Gran Maestre", "Lindos"],
-    coverImage: "/cities/rhodes.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHVxGtqxt2V3lBc2Buo51cwFtIh7EayHag&s",
   },
   {
     id: "kusadasi",
@@ -75,7 +75,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10],
     description: "Puerta de entrada a las ruinas de la antigua Éfeso, una de las ciudades clásicas mejor conservadas del mundo.",
     highlights: ["Ruinas de Éfeso", "Biblioteca de Celso", "Costa Egea"],
-    coverImage: "/cities/kusadasi.webp",
+    coverImage: "https://www.msccruceros.com.ar/-/media/global-contents/destinations/ports/turkey/kusadasi/kusadasi_visual.jpg?bc=transparent&as=1&mh=930&mw=1640&hash=7AB236ECF232BA8DCE031C2A7E4F984E",
   },
   {
     id: "malta",
@@ -94,7 +94,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10, 11],
     description: "La capital más pequeña de Europa y joya de la UNESCO, Valletta mezcla arquitectura barroca con la antigua historia maltesa.",
     highlights: ["Co-Catedral de San Juan", "Gran Puerto", "Mdina"],
-    coverImage: "/cities/malta.webp",
+    coverImage: "https://estaticos-cdn.prensaiberica.es/clip/8bef1f3b-d505-4b12-b7b5-b30428530a86_16-9-discover-aspect-ratio_default_0.jpg",
   },
   {
     id: "palma",
@@ -113,7 +113,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "Ciudad mediterránea sofisticada con una impresionante catedral gótica, tiendas exclusivas y un puerto cristalino.",
     highlights: ["Catedral La Seu", "Casco Antiguo", "Castillo de Bellver"],
-    coverImage: "/cities/palma.webp",
+    coverImage: "https://abcmallorcastorage.blob.core.windows.net/images/2022/01/palma-mallorca-7-copy.jpg",
   },
   {
     id: "marseille",
@@ -132,7 +132,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "La ciudad más antigua de Francia, un puerto vibrante lleno de sabores provenzales y la icónica bouillabaisse.",
     highlights: ["Vieux-Port", "Notre-Dame de la Garde", "Calanques"],
-    coverImage: "/cities/marseille.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdej55dw-0-jkwvyDyRsCOhRPjVKYo8zZwFA&s",
   },
   {
     id: "la-spezia",
@@ -151,7 +151,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "Puerta de entrada a las Cinque Terre: cinco aldeas de colores pastel aferradas a acantilados costeros espectaculares.",
     highlights: ["Cinque Terre", "Portovenere", "Golfo de La Spezia"],
-    coverImage: "/cities/la-spezia.webp",
+    coverImage: "https://cdn.getyourguide.com/img/tour/63c953e1964fa.jpeg/68.jpg",
   },
   {
     id: "rome",
@@ -170,7 +170,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10],
     description: "La Ciudad Eterna — dos milenios de historia en cada calle: el Coliseo, el Vaticano, la Fontana di Trevi y mucho más.",
     highlights: ["Coliseo", "Ciudad del Vaticano", "Fontana di Trevi"],
-    coverImage: "/cities/rome.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWyq_eKnfHFkKRUUDfUE5AVSS-kYfHAg1Tg&s",
   },
   {
     id: "naples",
@@ -189,7 +189,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "Cuna de la pizza, puerta a Pompeya y la Costa Amalfitana: una ciudad de pasión, historia y gastronomía extraordinaria.",
     highlights: ["Pompeya", "Costa Amalfitana", "Pizza Napoletana"],
-    coverImage: "/cities/naples.webp",
+    coverImage: "https://losviajesdemary.com/wp-content/uploads/2015/10/Imperdibles-de-Napoles.png",
   },
   {
     id: "malaga",
@@ -208,7 +208,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10, 11],
     description: "Ciudad natal de Picasso y soleada puerta de Andalucía, con fortalezas moriscas, tapas y una vibrante escena cultural.",
     highlights: ["Alcazaba", "Museo Picasso", "Playa La Malagueta"],
-    coverImage: "/cities/malaga.webp",
+    coverImage: "https://content.r9cdn.net/rimg/dimg/ee/b1/8afb451d-city-5309-15cef627e8c.jpg?width=1366&height=768&crop=true&cropStrategy=attention",
   },
   {
     id: "cadiz",
@@ -227,7 +227,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10, 11],
     description: "Una de las ciudades más antiguas de Europa, un tesoro rodeado de mar con catedral dorada y cultura marinera atlántica.",
     highlights: ["Casco Antiguo", "Catedral", "Playas del Atlántico"],
-    coverImage: "/cities/cadiz.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iap1U1feg3BAw4kctH5AmE9iP8Ph8vWuQg&s",
   },
   {
     id: "lisbon",
@@ -246,7 +246,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10, 11],
     description: "Ciudad de luz y Fado, con miradores sobre el Tajo, fachadas de azulejos y el rico legado de la Era de los Descubrimientos.",
     highlights: ["Alfama", "Torre de Belém", "Miradores"],
-    coverImage: "/cities/lisbon.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLs1dmhEcFb2P7ykSDEP0Sn7amwxlOnjlUdQ&s",
   },
   {
     id: "porto",
@@ -265,7 +265,7 @@ export const cities: City[] = [
     bestMonths: [5, 6, 9, 10],
     description: "El frente fluvial apilado de Oporto y sus bodegas de vino de Oporto crean una ciudad mágica y fotogénica única en Europa.",
     highlights: ["Barrio de Ribeira", "Bodegas de vino", "Puente Dom Luís"],
-    coverImage: "/cities/porto.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4hs2CknS8077-OZ7cKelJrtanRAx-RZMXw&s",
   },
   {
     id: "tangier",
@@ -284,7 +284,7 @@ export const cities: City[] = [
     bestMonths: [4, 5, 9, 10, 11],
     description: "La puerta de África: la medina, los mercados de especias y las vistas al Estrecho de Gibraltar ofrecen un contraste cultural fascinante.",
     highlights: ["Medina", "Kasbah", "Estrecho de Gibraltar"],
-    coverImage: "/cities/tangier.webp",
+    coverImage: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/01/tanger-chefchaouen-888.jpg",
   },
   {
     id: "barcelona",
@@ -309,7 +309,7 @@ export const cities: City[] = [
       "Las Ramblas",
       "Parc Güell",
     ],
-    coverImage: "/cities/barcelona.webp",
+    coverImage: "https://i0.wp.com/armandotuviaje.blog/wp-content/uploads/2017/06/barcelona1.jpg?fit=1920%2C1080&ssl=1",
   },
   {
     id: "niza",
@@ -333,7 +333,7 @@ export const cities: City[] = [
       "Casco antiguo (Vieux Nice)",
       "Colina del Castillo",
     ],
-    coverImage: "/cities/nice.webp",
+    coverImage: "https://content-viajes.nationalgeographic.com.es/medio/2025/12/12/adobestock_9015a079_355868025_251212151617_1280x879.webp",
   },
   {
     id: "katakolon",
@@ -357,7 +357,7 @@ export const cities: City[] = [
       "Puerto de Katákolon",
       "Playas cercanas",
     ],
-    coverImage: "/cities/katakolon.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbnYow6xUe5Bt_yQeyFgoTQIsdBlQLmWFXA&s",
   },
   {
     id: "pireo",
@@ -381,7 +381,7 @@ export const cities: City[] = [
       "Plaka",
       "Puerto de Mikrolimano",
     ],
-    coverImage: "/cities/piraeus.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcBKjXbC4Xnd_0BAdKjo9hoWtzVmOFW0p_Q&s",
   },
   {
     id: "corfu",
@@ -406,7 +406,7 @@ export const cities: City[] = [
       "Liston Promenade",
       "Paleokastritsa",
     ],
-    coverImage: "/cities/corfu.webp",
+    coverImage: "https://image.urlaubspiraten.de/640/image/upload/v1603282560/mediavault_images/ogxtfowfm7czsefouxg4.jpg",
   },
   {
     id: "kotor",
@@ -431,7 +431,7 @@ export const cities: City[] = [
       "Bay of Kotor",
       "St. Tryphon Cathedral",
     ],
-    coverImage: "/cities/kotor.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRuQ1HRUPmN_o-1qRAIlEjPa8xrCDkERfg7g&s",
   },
   {
     id: "zadar",
@@ -456,7 +456,7 @@ export const cities: City[] = [
       "Roman Forum",
       "St. Donatus Church",
     ],
-    coverImage: "/cities/zadar.webp",
+    coverImage: "https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2017/09/Vistas-de-Zadar.jpg?resize=600%2C400&ssl=1",
   },
   {
     id: "koper",
@@ -481,7 +481,7 @@ export const cities: City[] = [
       "Cathedral of the Assumption",
       "Koper Promenade",
     ],
-    coverImage: "/cities/koper.webp",
+    coverImage: "https://passporterapp.com/es/blog/eslovenia/que-ver-en-koper/",
   },
   {
     id: "ravenna",
@@ -506,6 +506,6 @@ export const cities: City[] = [
       "Basilica di Sant'Apollinare Nuovo",
       "Dante's Tomb",
     ],
-    coverImage: "/cities/ravenna.webp",
+    coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zRobJ7Dcoq3qWTc3WAyqCqB9bKw28YJ6Wg&s",
   }
 ];

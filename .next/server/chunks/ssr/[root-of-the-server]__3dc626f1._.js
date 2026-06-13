@@ -40,7 +40,7 @@ const cities = [
             "Fira",
             "Cúpulas azules"
         ],
-        coverImage: "/cities/santorini.webp"
+        coverImage: "https://res.cloudinary.com/manawa/image/private/c_fill,g_auto,h_630,w_1200,q_auto/uy2qidhrbntj85537glz"
     },
     {
         id: "mykonos",
@@ -68,7 +68,7 @@ const cities = [
             "Molinos de viento",
             "Playa Paradise"
         ],
-        coverImage: "/cities/mykonos.webp"
+        coverImage: "https://blog.vayacruceros.com/wp-content/uploads/2025/10/visitas-en-la-isla-de-mykonos.jpg"
     },
     {
         id: "rhodes",
@@ -96,7 +96,7 @@ const cities = [
             "Palacio del Gran Maestre",
             "Lindos"
         ],
-        coverImage: "/cities/rhodes.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHVxGtqxt2V3lBc2Buo51cwFtIh7EayHag&s"
     },
     {
         id: "kusadasi",
@@ -124,7 +124,7 @@ const cities = [
             "Biblioteca de Celso",
             "Costa Egea"
         ],
-        coverImage: "/cities/kusadasi.webp"
+        coverImage: "https://www.msccruceros.com.ar/-/media/global-contents/destinations/ports/turkey/kusadasi/kusadasi_visual.jpg?bc=transparent&as=1&mh=930&mw=1640&hash=7AB236ECF232BA8DCE031C2A7E4F984E"
     },
     {
         id: "malta",
@@ -153,7 +153,7 @@ const cities = [
             "Gran Puerto",
             "Mdina"
         ],
-        coverImage: "/cities/malta.webp"
+        coverImage: "https://estaticos-cdn.prensaiberica.es/clip/8bef1f3b-d505-4b12-b7b5-b30428530a86_16-9-discover-aspect-ratio_default_0.jpg"
     },
     {
         id: "palma",
@@ -181,7 +181,7 @@ const cities = [
             "Casco Antiguo",
             "Castillo de Bellver"
         ],
-        coverImage: "/cities/palma.webp"
+        coverImage: "https://abcmallorcastorage.blob.core.windows.net/images/2022/01/palma-mallorca-7-copy.jpg"
     },
     {
         id: "marseille",
@@ -209,7 +209,7 @@ const cities = [
             "Notre-Dame de la Garde",
             "Calanques"
         ],
-        coverImage: "/cities/marseille.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdej55dw-0-jkwvyDyRsCOhRPjVKYo8zZwFA&s"
     },
     {
         id: "la-spezia",
@@ -237,7 +237,7 @@ const cities = [
             "Portovenere",
             "Golfo de La Spezia"
         ],
-        coverImage: "/cities/la-spezia.webp"
+        coverImage: "https://cdn.getyourguide.com/img/tour/63c953e1964fa.jpeg/68.jpg"
     },
     {
         id: "rome",
@@ -265,7 +265,7 @@ const cities = [
             "Ciudad del Vaticano",
             "Fontana di Trevi"
         ],
-        coverImage: "/cities/rome.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWyq_eKnfHFkKRUUDfUE5AVSS-kYfHAg1Tg&s"
     },
     {
         id: "naples",
@@ -293,7 +293,7 @@ const cities = [
             "Costa Amalfitana",
             "Pizza Napoletana"
         ],
-        coverImage: "/cities/naples.webp"
+        coverImage: "https://losviajesdemary.com/wp-content/uploads/2015/10/Imperdibles-de-Napoles.png"
     },
     {
         id: "malaga",
@@ -322,7 +322,7 @@ const cities = [
             "Museo Picasso",
             "Playa La Malagueta"
         ],
-        coverImage: "/cities/malaga.webp"
+        coverImage: "https://content.r9cdn.net/rimg/dimg/ee/b1/8afb451d-city-5309-15cef627e8c.jpg?width=1366&height=768&crop=true&cropStrategy=attention"
     },
     {
         id: "cadiz",
@@ -351,7 +351,7 @@ const cities = [
             "Catedral",
             "Playas del Atlántico"
         ],
-        coverImage: "/cities/cadiz.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iap1U1feg3BAw4kctH5AmE9iP8Ph8vWuQg&s"
     },
     {
         id: "lisbon",
@@ -380,7 +380,7 @@ const cities = [
             "Torre de Belém",
             "Miradores"
         ],
-        coverImage: "/cities/lisbon.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLs1dmhEcFb2P7ykSDEP0Sn7amwxlOnjlUdQ&s"
     },
     {
         id: "porto",
@@ -408,7 +408,7 @@ const cities = [
             "Bodegas de vino",
             "Puente Dom Luís"
         ],
-        coverImage: "/cities/porto.webp"
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4hs2CknS8077-OZ7cKelJrtanRAx-RZMXw&s"
     },
     {
         id: "tangier",
@@ -437,7 +437,266 @@ const cities = [
             "Kasbah",
             "Estrecho de Gibraltar"
         ],
-        coverImage: "/cities/tangier.webp"
+        coverImage: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/01/tanger-chefchaouen-888.jpg"
+    },
+    {
+        id: "barcelona",
+        name: "Barcelona",
+        countryId: "spain",
+        latitude: 41.3851,
+        longitude: 2.1734,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 10,
+        historyScore: 9,
+        temperatureSummer: 28,
+        temperatureSpring: 20,
+        recommendedHours: 8,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad vibrante donde modernismo, playa y vida urbana se combinan. El puerto es uno de los principales hubs de cruceros del Mediterráneo.",
+        highlights: [
+            "Sagrada Familia",
+            "Barrio Gótico",
+            "Las Ramblas",
+            "Parc Güell"
+        ],
+        coverImage: "https://i0.wp.com/armandotuviaje.blog/wp-content/uploads/2017/06/barcelona1.jpg?fit=1920%2C1080&ssl=1"
+    },
+    {
+        id: "niza",
+        name: "Niza",
+        countryId: "france",
+        latitude: 43.7102,
+        longitude: 7.2620,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 9,
+        historyScore: 7,
+        temperatureSummer: 27,
+        temperatureSpring: 19,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Elegante ciudad de la Costa Azul con paseo marítimo icónico, arquitectura francesa clásica y ambiente mediterráneo relajado.",
+        highlights: [
+            "Promenade des Anglais",
+            "Casco antiguo (Vieux Nice)",
+            "Colina del Castillo"
+        ],
+        coverImage: "https://content-viajes.nationalgeographic.com.es/medio/2025/12/12/adobestock_9015a079_355868025_251212151617_1280x879.webp"
+    },
+    {
+        id: "katakolon",
+        name: "Katákolon",
+        countryId: "greece",
+        latitude: 37.6415,
+        longitude: 21.3180,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 10,
+        temperatureSummer: 30,
+        temperatureSpring: 22,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Pequeño puerto griego conocido como puerta de entrada a la antigua Olimpia, uno de los sitios arqueológicos más importantes del mundo.",
+        highlights: [
+            "Ancient Olympia",
+            "Puerto de Katákolon",
+            "Playas cercanas"
+        ],
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbnYow6xUe5Bt_yQeyFgoTQIsdBlQLmWFXA&s"
+    },
+    {
+        id: "pireo",
+        name: "Pireo (Atenas)",
+        countryId: "greece",
+        latitude: 37.9429,
+        longitude: 23.6469,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 7,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 32,
+        temperatureSpring: 24,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Atenas y punto de acceso a la Acrópolis y la historia clásica de Grecia. Mezcla de puerto moderno y cultura milenaria.",
+        highlights: [
+            "Acrópolis de Atenas",
+            "Plaka",
+            "Puerto de Mikrolimano"
+        ],
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcBKjXbC4Xnd_0BAdKjo9hoWtzVmOFW0p_Q&s"
+    },
+    {
+        id: "corfu",
+        name: "Corfu",
+        countryId: "greece",
+        latitude: 39.6243,
+        longitude: 19.9217,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 9,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 31,
+        temperatureSpring: 21,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Isla griega famosa por sus playas, arquitectura veneciana y ambiente relajado. Es una escala habitual de cruceros en el mar Jónico.",
+        highlights: [
+            "Old Town",
+            "Old Fortress",
+            "Liston Promenade",
+            "Paleokastritsa"
+        ],
+        coverImage: "https://image.urlaubspiraten.de/640/image/upload/v1603282560/mediavault_images/ogxtfowfm7czsefouxg4.jpg"
+    },
+    {
+        id: "kotor",
+        name: "Kotor",
+        countryId: "montenegro",
+        latitude: 42.4247,
+        longitude: 18.7712,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 10,
+        foodScore: 8,
+        historyScore: 9,
+        temperatureSummer: 30,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad medieval amurallada situada en una espectacular bahía rodeada de montañas. Uno de los destinos más pintorescos del Adriático.",
+        highlights: [
+            "Old Town",
+            "Kotor Fortress",
+            "Bay of Kotor",
+            "St. Tryphon Cathedral"
+        ],
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRuQ1HRUPmN_o-1qRAIlEjPa8xrCDkERfg7g&s"
+    },
+    {
+        id: "zadar",
+        name: "Zadar",
+        countryId: "croatia",
+        latitude: 44.1194,
+        longitude: 15.2314,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 8,
+        historyScore: 8,
+        temperatureSummer: 30,
+        temperatureSpring: 21,
+        recommendedHours: 5,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Histórica ciudad costera croata conocida por su casco antiguo romano y sus innovadoras instalaciones frente al mar.",
+        highlights: [
+            "Sea Organ",
+            "Greeting to the Sun",
+            "Roman Forum",
+            "St. Donatus Church"
+        ],
+        coverImage: "https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2017/09/Vistas-de-Zadar.jpg?resize=600%2C400&ssl=1"
+    },
+    {
+        id: "koper",
+        name: "Koper",
+        countryId: "slovenia",
+        latitude: 45.5481,
+        longitude: 13.7302,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 7,
+        foodScore: 8,
+        historyScore: 7,
+        temperatureSummer: 29,
+        temperatureSpring: 19,
+        recommendedHours: 4,
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Principal puerto de Eslovenia, con un pequeño casco histórico de influencia veneciana y acceso rápido a la costa adriática.",
+        highlights: [
+            "Tito Square",
+            "Praetorian Palace",
+            "Cathedral of the Assumption",
+            "Koper Promenade"
+        ],
+        coverImage: "https://passporterapp.com/es/blog/eslovenia/que-ver-en-koper/"
+    },
+    {
+        id: "ravenna",
+        name: "Ravenna",
+        countryId: "italy",
+        latitude: 44.4184,
+        longitude: 12.2035,
+        walkingDifficulty: "easy",
+        safety: 5,
+        beautyScore: 8,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 31,
+        temperatureSpring: 20,
+        recommendedHours: 6,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Ciudad italiana célebre por sus impresionantes mosaicos bizantinos y sus monumentos declarados Patrimonio de la Humanidad.",
+        highlights: [
+            "Basilica di San Vitale",
+            "Mausoleum of Galla Placidia",
+            "Basilica di Sant'Apollinare Nuovo",
+            "Dante's Tomb"
+        ],
+        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zRobJ7Dcoq3qWTc3WAyqCqB9bKw28YJ6Wg&s"
     }
 ];
 }),

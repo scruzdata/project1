@@ -1282,6 +1282,10 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+.max-h-\[40\%\] {
+  max-height: 40%;
+}
+
 .min-h-\[48px\] {
   min-height: 48px;
 }
@@ -3195,6 +3199,10 @@ path.route-active {
 
   .md\:h-\[calc\(100dvh-5rem\)\] {
     height: calc(100dvh - 5rem);
+  }
+
+  .md\:max-h-none {
+    max-height: none;
   }
 
   .md\:min-h-0 {
