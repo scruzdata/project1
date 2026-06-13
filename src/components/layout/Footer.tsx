@@ -25,7 +25,7 @@ export function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Un regalo para soñar, explorar y celebrar el próximo gran capítulo
-              de sus vidas juntos.
+              de vuestras vidas juntos.
             </p>
           </div>
 

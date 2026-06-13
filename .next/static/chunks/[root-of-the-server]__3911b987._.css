@@ -1738,6 +1738,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 50;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .mx-1 {
   margin-left: .25rem;
   margin-right: .25rem;
@@ -1862,6 +1870,10 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-\[4\/3\] {
+  aspect-ratio: 4 / 3;
+}
+
 .h-0\.5 {
   height: .125rem;
 }
@@ -1960,6 +1972,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-px {
   height: 1px;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .min-h-\[48px\] {
@@ -2274,6 +2290,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
   column-gap: 1.25rem;
@@ -2370,6 +2390,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -2426,6 +2452,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: calc(var(--radius)  + 4px);
 }
 
+.rounded {
+  border-radius: .25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2464,6 +2494,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-dashed {
+  border-style: dashed;
 }
 
 .border-accent {
@@ -2963,6 +2997,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 2rem;
 }
 
+.px-1\.5 {
+  padding-left: .375rem;
+  padding-right: .375rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -3342,6 +3386,10 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, .9);
 }
 
+.text-accent\/60 {
+  color: hsl(var(--accent) / .6);
+}
+
 .opacity-40 {
   opacity: .4;
 }
@@ -3365,6 +3413,12 @@ h1, h2, h3, h4, h5, h6 {
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
 }
 
@@ -3396,6 +3450,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .ring-accent\/40 {
   --tw-ring-color: hsl(var(--accent) / .4);
+}
+
+.ring-border\/40 {
+  --tw-ring-color: hsl(var(--border) / .4);
 }
 
 .filter {
@@ -3898,6 +3956,14 @@ path.route-active {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
+  }
+
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3916,6 +3982,14 @@ path.route-active {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:text-3xl {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { itineraries } from "@/data/itineraries";
 import { cities } from "@/data/cities";
 import { HeroSection } from "@/features/home/components/HeroSection";
+import { TributeSection } from "@/features/home/components/TributeSection";
 
 export const metadata: Metadata = { title: "Regalo Jubilación" };
 
@@ -13,6 +14,12 @@ export default function HomePage() {
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
       <HeroSection backgroundImage="/images/hero.jpg" />
+
+      {/* ── Tribute ──────────────────────────────────────────── */}
+      <TributeSection
+        // imageSrc="/images/familia.jpg"
+        // imageAlt="Papá y mamá"
+      />
 
       {/* ── Featured itineraries ─────────────────────────────── */}
       <section className="section">
