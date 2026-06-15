@@ -1,38 +1,9 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/src/features/map/map.config.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/src/features/map/map.config.ts [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "ITINERARY_COLORS",
-    ()=>ITINERARY_COLORS,
-    "MAP_DEFAULTS",
-    ()=>MAP_DEFAULTS,
-    "TILE_LAYER",
-    ()=>TILE_LAYER
-]);
-const ITINERARY_COLORS = {
-    "greek-islands": "#4DDCE3",
-    "western-mediterranean": "#10b981",
-    "iberia-morocco": "#f97316",
-    "italia-turquia-grecia": "#275EF5"
-};
-const MAP_DEFAULTS = {
-    center: [
-        38.5,
-        10.0
-    ],
-    zoom: 5,
-    minZoom: 4,
-    maxZoom: 12
-};
-const TILE_LAYER = {
-    url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-    urlDark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-};
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
+const e = new Error("Could not parse module '[project]/src/features/map/map.config.ts'\n\nExpression expected");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[project]/src/features/map/components/MapPin.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

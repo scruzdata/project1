@@ -472,6 +472,45 @@ function ItineraryDetail(param) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container-site space-y-16 py-16 md:py-20",
                 children: [
+                    itinerary.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "eyebrow mb-3",
+                                children: "Sobre este viaje"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "heading-2 mb-6",
+                                children: "Por qué este itinerario"
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
+                                lineNumber: 105,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "max-w-3xl space-y-4",
+                                children: itinerary.description.split("\n\n").map((paragraph, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-base text-muted-foreground leading-relaxed",
+                                        children: paragraph
+                                    }, i, false, {
+                                        fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
+                                        lineNumber: 108,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
+                                lineNumber: 106,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
+                        lineNumber: 103,
+                        columnNumber: 11
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -479,7 +518,7 @@ function ItineraryDetail(param) {
                                 children: "La ruta"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 103,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -487,7 +526,7 @@ function ItineraryDetail(param) {
                                 children: "Puertos que visitarás"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 104,
+                                lineNumber: 119,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -526,7 +565,7 @@ function ItineraryDetail(param) {
                                                         className: "h-3 w-3 rounded-full bg-accent ring-4 ring-accent/15 shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 140,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -534,13 +573,13 @@ function ItineraryDetail(param) {
                                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$itineraries$2f$itineraries$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatDestinationId"])(id)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 141,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 139,
                                                 columnNumber: 17
                                             }, this),
                                             i < itinerary.destinationIds.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -548,18 +587,18 @@ function ItineraryDetail(param) {
                                                 "aria-hidden": true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 146,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, id, true, {
                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 126,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 105,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -572,18 +611,18 @@ function ItineraryDetail(param) {
                                     selectedItineraryId: itinerary.id
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 154,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 138,
+                                lineNumber: 153,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                        lineNumber: 102,
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
@@ -594,7 +633,7 @@ function ItineraryDetail(param) {
                                 children: "Lo mejor"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 149,
+                                lineNumber: 164,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -602,7 +641,7 @@ function ItineraryDetail(param) {
                                 children: "Momentos destacados"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 150,
+                                lineNumber: 165,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -636,7 +675,7 @@ function ItineraryDetail(param) {
                                                 strokeWidth: 1.5
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 180,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -644,24 +683,24 @@ function ItineraryDetail(param) {
                                                 children: h
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 169,
+                                                lineNumber: 184,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, h, true, {
                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                        lineNumber: 153,
+                                        lineNumber: 168,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 151,
+                                lineNumber: 166,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                        lineNumber: 148,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
@@ -672,7 +711,7 @@ function ItineraryDetail(param) {
                                 children: "Temporada ideal"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 177,
+                                lineNumber: 192,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -680,7 +719,7 @@ function ItineraryDetail(param) {
                                 children: "Mejor época para viajar"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 178,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -699,7 +738,7 @@ function ItineraryDetail(param) {
                                                 className: "w-full justify-center"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 199,
                                                 columnNumber: 19
                                             }, this),
                                             active && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -707,19 +746,19 @@ function ItineraryDetail(param) {
                                                 "aria-hidden": true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 186,
+                                                lineNumber: 201,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, m, true, {
                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 198,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 179,
+                                lineNumber: 194,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -727,13 +766,13 @@ function ItineraryDetail(param) {
                                 children: "Los meses resaltados son los más recomendados para este itinerario."
                             }, void 0, false, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 192,
+                                lineNumber: 207,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                        lineNumber: 176,
+                        lineNumber: 191,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
@@ -748,7 +787,7 @@ function ItineraryDetail(param) {
                                         strokeWidth: 1.5
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 216,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -759,7 +798,7 @@ function ItineraryDetail(param) {
                                                 children: "Este viaje es perfecto para"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 203,
+                                                lineNumber: 218,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -769,34 +808,34 @@ function ItineraryDetail(param) {
                                                         children: item
                                                     }, item, false, {
                                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 221,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                                lineNumber: 204,
+                                                lineNumber: 219,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 217,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                                lineNumber: 200,
+                                lineNumber: 215,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                            lineNumber: 199,
+                            lineNumber: 214,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                        lineNumber: 198,
+                        lineNumber: 213,
                         columnNumber: 9
                     }, this)
                 ]
@@ -828,13 +867,13 @@ function Fact(param) {
                         children: label
                     }, void 0, false, {
                         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                        lineNumber: 235,
+                        lineNumber: 250,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                lineNumber: 233,
+                lineNumber: 248,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -842,13 +881,13 @@ function Fact(param) {
                 children: value
             }, void 0, false, {
                 fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-                lineNumber: 237,
+                lineNumber: 252,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/itineraries/components/ItineraryDetail.tsx",
-        lineNumber: 232,
+        lineNumber: 247,
         columnNumber: 5
     }, this);
 }

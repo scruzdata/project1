@@ -24,6 +24,7 @@ export function DestinationsFilter({ cities, itineraries }: Props) {
     ? activeItinerary.destinationIds
         .map((d) => cities.find((c) => c.id.toLowerCase() === d.toLowerCase()))
         .filter((c): c is City => c !== undefined)
+        .filter((c, i, arr) => arr.findIndex((x) => x.id === c.id) === i)
     : cities;
 
   return (

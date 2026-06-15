@@ -26,4 +26,6 @@ export interface Itinerary {
   highlights: string[];
 
   image: string;
+  
+  description:string
 }

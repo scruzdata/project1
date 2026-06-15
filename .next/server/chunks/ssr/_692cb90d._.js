@@ -14,7 +14,8 @@ const ITINERARY_COLORS = {
     "greek-islands": "#4DDCE3",
     "western-mediterranean": "#10b981",
     "iberia-morocco": "#f97316",
-    "italia-turquia-grecia": "#275EF5"
+    "italia-turquia-grecia": "#275EF5",
+    "spain-france-italy": "#275EF5"
 };
 const MAP_DEFAULTS = {
     center: [

@@ -825,6 +825,68 @@ const cities = [
             "Aldea tradicional"
         ],
         coverImage: "https://www.egipto.com/wp-content/uploads/2022/02/templo-kom-ombo-optimized.jpg"
+    },
+    {
+        id: "genove",
+        name: "Génova",
+        countryId: "italy",
+        latitude: 44.4056,
+        longitude: 8.9463,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 9,
+        historyScore: 9,
+        temperatureSummer: 30,
+        temperatureSpring: 18,
+        recommendedHours: 9,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Génova es una histórica ciudad portuaria del norte de Italia y una de las repúblicas marítimas más importantes de la Edad Media. Su casco antiguo es uno de los más grandes de Europa, con callejuelas estrechas (caruggi), palacios renacentistas y un puerto renovado que combina historia y modernidad. Es famosa por su tradición naval y su gastronomía, especialmente el pesto genovés.",
+        highlights: [
+            "Centro histórico (Caruggi)",
+            "Puerto Antiguo (Porto Antico)",
+            "Acuario de Génova",
+            "Via Garibaldi y Palazzi dei Rolli",
+            "Catedral de San Lorenzo"
+        ],
+        coverImage: "https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/%20Genoa_1.jpg"
+    },
+    {
+        id: "messina",
+        name: "Messina",
+        countryId: "italy",
+        latitude: 38.1938,
+        longitude: 15.5540,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 8.5,
+        foodScore: 9,
+        historyScore: 9,
+        temperatureSummer: 34,
+        temperatureSpring: 22,
+        recommendedHours: 7,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Messina es una ciudad portuaria situada en el estrecho que separa Sicilia de la península italiana. Ha sido un punto estratégico clave durante siglos debido a su ubicación. Aunque fue gravemente dañada por terremotos e incendios históricos, hoy combina patrimonio religioso, arquitectura reconstruida y vistas espectaculares al estrecho de Messina.",
+        highlights: [
+            "Catedral de Messina",
+            "Reloj astronómico del campanario",
+            "Puerto de Messina",
+            "Estrecho de Messina",
+            "Fuente de Orión"
+        ],
+        coverImage: "https://www.turitalia.com/fotos/ciudades_italia/sicilia-messina-taormina.jpg"
     }
 ];
 }),

@@ -98,6 +98,21 @@ export function ItineraryDetail({ itinerary, cities }: ItineraryDetailProps) {
 
       <div className="container-site space-y-16 py-16 md:py-20">
 
+        {/* ── Description ──────────────────────────────────── */}
+        {itinerary.description && (
+          <Section>
+            <p className="eyebrow mb-3">Sobre este viaje</p>
+            <h2 className="heading-2 mb-6">Por qué este itinerario</h2>
+            <div className="max-w-3xl space-y-4">
+              {itinerary.description.split("\n\n").map((paragraph, i) => (
+                <p key={i} className="text-base text-muted-foreground leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </Section>
+        )}
+
         {/* ── Port chain ───────────────────────────────────── */}
         <Section>
           <p className="eyebrow mb-3">La ruta</p>
