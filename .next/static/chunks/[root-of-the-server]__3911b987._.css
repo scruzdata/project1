@@ -4121,6 +4121,10 @@ path.route-inactive {
     height: 100%;
   }
 
+  .md\:h-\[min\(90vh\,56rem\)\] {
+    height: min(90vh, 56rem);
+  }
+
   .md\:max-h-none {
     max-height: none;
   }

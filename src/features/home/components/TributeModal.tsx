@@ -25,6 +25,11 @@ export function TributeModal({ photos }: TributeModalProps) {
     }
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
   function dismiss() {
     localStorage.setItem(STORAGE_KEY, "1");
     setOpen(false);
@@ -47,7 +52,7 @@ export function TributeModal({ photos }: TributeModalProps) {
       />
 
       {/* Panel */}
-      <div className="relative z-10 bg-background border border-border rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col md:grid md:grid-cols-2 overflow-hidden">
+      <div className="relative z-10 bg-background border border-border rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] md:h-[min(90vh,56rem)] flex flex-col md:grid md:grid-cols-2 overflow-hidden">
         <button
           onClick={dismiss}
           aria-label="Cerrar mensaje"

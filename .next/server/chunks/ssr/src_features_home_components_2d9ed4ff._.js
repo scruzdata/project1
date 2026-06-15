@@ -160,6 +160,14 @@ function TributeModal({ photos }) {
             setOpen(true);
         }
     }, []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        document.body.style.overflow = open ? "hidden" : "";
+        return ()=>{
+            document.body.style.overflow = "";
+        };
+    }, [
+        open
+    ]);
     function dismiss() {
         localStorage.setItem(STORAGE_KEY, "1");
         setOpen(false);
@@ -177,11 +185,11 @@ function TributeModal({ photos }) {
                 "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                lineNumber: 43,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 bg-background border border-border rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col md:grid md:grid-cols-2 overflow-hidden",
+                className: "relative z-10 bg-background border border-border rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] md:h-[min(90vh,56rem)] flex flex-col md:grid md:grid-cols-2 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: dismiss,
@@ -191,12 +199,12 @@ function TributeModal({ photos }) {
                             className: "w-4 h-4"
                         }, void 0, false, {
                             fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                            lineNumber: 56,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                        lineNumber: 51,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -204,7 +212,7 @@ function TributeModal({ photos }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$home$2f$components$2f$TributeCopy$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TributeCopy"], {}, void 0, false, {
                                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                lineNumber: 61,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -213,13 +221,13 @@ function TributeModal({ photos }) {
                                 children: "Empezar a explorar"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                lineNumber: 62,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                        lineNumber: 60,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this),
                     photos && photos.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -234,17 +242,17 @@ function TributeModal({ photos }) {
                                     sizes: "33vw"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 80,
                                     columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                lineNumber: 74,
+                                lineNumber: 79,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                        lineNumber: 72,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, this),
                     photos && photos.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -260,29 +268,29 @@ function TributeModal({ photos }) {
                                     sizes: "20vw"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 97,
                                     columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                                lineNumber: 91,
+                                lineNumber: 96,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                        lineNumber: 89,
+                        lineNumber: 94,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/home/components/TributeModal.tsx",
-                lineNumber: 50,
+                lineNumber: 55,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/home/components/TributeModal.tsx",
-        lineNumber: 36,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }

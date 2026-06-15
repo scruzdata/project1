@@ -15,7 +15,10 @@ interface MobileNavProps {
 
 export function MobileNav({ className }: MobileNavProps) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => setMounted(true), []);
 
   // Close on route change
   useEffect(() => setOpen(false), [pathname]);
@@ -147,7 +150,7 @@ export function MobileNav({ className }: MobileNavProps) {
         <Menu className="h-5 w-5" />
       </button>
 
-      {typeof document !== "undefined" && createPortal(overlay, document.body)}
+      {mounted && createPortal(overlay, document.body)}
     </>
   );
 }
