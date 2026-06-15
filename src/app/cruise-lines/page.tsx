@@ -17,6 +17,15 @@ export default function CruiseLinesPage() {
             Hemos analizado las principales compañías para encontrar las más
             adecuadas para un primer crucero elegante, tranquilo y sin estrés.
           </p>
+          <a
+            href="https://www.logitravel.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 hover:gap-2.5"
+          >
+            <span>Ver más en Logitravel</span>
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 

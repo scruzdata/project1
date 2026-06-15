@@ -1176,6 +1176,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 5px;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -3165,6 +3169,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .last\:border-0:last-child {
   border-width: 0;
+}
+
+.hover\:gap-2\.5:hover {
+  gap: .625rem;
 }
 
 .hover\:border-accent:hover {

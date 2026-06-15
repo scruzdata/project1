@@ -61,7 +61,9 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
-// ── Animates stroke-dashoffset via rAF — reliable in all envs ──
+// ── Animates stroke-dashoffset via rAF using leaflet-interactive ──
+// Uses path.leaflet-interactive — always present on Leaflet SVG paths,
+// regardless of pathOptions.className, making it reliable in all envs.
 function RouteAnimator() {
     _s();
     const map = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMap"])();
@@ -69,19 +71,12 @@ function RouteAnimator() {
         "RouteAnimator.useEffect": ()=>{
             const container = map.getContainer();
             let frame;
-            let aOffset = 0;
-            let iOffset = 0;
+            let offset = 0;
             function tick() {
-                aOffset = (aOffset + 0.5) % 18;
-                iOffset = (iOffset + 0.2) % 12;
-                container.querySelectorAll("path.route-active").forEach({
+                offset = (offset + 0.35) % 12;
+                container.querySelectorAll("path.leaflet-interactive").forEach({
                     "RouteAnimator.useEffect.tick": (p)=>{
-                        p.setAttribute("stroke-dashoffset", String(aOffset));
-                    }
-                }["RouteAnimator.useEffect.tick"]);
-                container.querySelectorAll("path.route-inactive").forEach({
-                    "RouteAnimator.useEffect.tick": (p)=>{
-                        p.setAttribute("stroke-dashoffset", String(iOffset));
+                        p.setAttribute("stroke-dashoffset", String(offset));
                     }
                 }["RouteAnimator.useEffect.tick"]);
                 frame = requestAnimationFrame(tick);
@@ -189,7 +184,7 @@ function InteractiveMap(param) {
                 attribution: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].attribution
             }, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 122,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapController, {
@@ -198,7 +193,7 @@ function InteractiveMap(param) {
                 itineraries: itineraries
             }, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 127,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             itineraries.map((it)=>{
@@ -220,13 +215,13 @@ function InteractiveMap(param) {
                     }
                 }, it.id, false, {
                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                    lineNumber: 143,
+                    lineNumber: 140,
                     columnNumber: 11
                 }, this);
             }),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RouteAnimator, {}, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 157,
+                lineNumber: 154,
                 columnNumber: 7
             }, this),
             cities.map((city)=>{
@@ -249,7 +244,7 @@ function InteractiveMap(param) {
                                     className: "city-popup-image"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 173,
+                                    lineNumber: 170,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -260,7 +255,7 @@ function InteractiveMap(param) {
                                             children: city.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 180,
+                                            lineNumber: 177,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -268,7 +263,7 @@ function InteractiveMap(param) {
                                             children: city.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 178,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -282,7 +277,7 @@ function InteractiveMap(param) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 180,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -293,7 +288,7 @@ function InteractiveMap(param) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 181,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -304,13 +299,13 @@ function InteractiveMap(param) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 185,
+                                                    lineNumber: 182,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 182,
+                                            lineNumber: 179,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -319,36 +314,36 @@ function InteractiveMap(param) {
                                             children: "Ver ciudad →"
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 187,
+                                            lineNumber: 184,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 176,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                            lineNumber: 170,
+                            lineNumber: 167,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                        lineNumber: 169,
+                        lineNumber: 166,
                         columnNumber: 13
                     }, this)
                 }, city.id, false, {
                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                    lineNumber: 163,
+                    lineNumber: 160,
                     columnNumber: 11
                 }, this);
             })
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-        lineNumber: 113,
+        lineNumber: 110,
         columnNumber: 5
     }, this);
 }

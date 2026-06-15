@@ -14,7 +14,7 @@ export const SCORE_DIMS = [
   {
     key: "crowdScore" as keyof TravelMonth,
     label: "Tranquilidad",
-    shortLabel: "Crowds",
+    shortLabel: "Ocupacion",
     color: "#10b981",
     bg: "bg-emerald-500/15",
     text: "text-emerald-600 dark:text-emerald-400",

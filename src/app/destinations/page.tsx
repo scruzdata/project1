@@ -17,6 +17,15 @@ export default function DestinationsPage() {
           <p className="lead max-w-2xl">
             Descubre cada puerto que podrás visitar en tu crucero.
           </p>
+          <a
+            href="https://www.logitravel.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 hover:gap-2.5"
+          >
+            <span>Ver más en Logitravel</span>
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 

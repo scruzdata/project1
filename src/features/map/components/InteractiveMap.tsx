@@ -18,27 +18,24 @@ import type { City } from "@/data/city";
 import { ITINERARY_COLORS, MAP_DEFAULTS, TILE_LAYER } from "../map.config";
 import { createCityIcon } from "./MapPin";
 
-// ── Animates stroke-dashoffset via rAF — reliable in all envs ──
+// ── Animates stroke-dashoffset via rAF using leaflet-interactive ──
+// Uses path.leaflet-interactive — always present on Leaflet SVG paths,
+// regardless of pathOptions.className, making it reliable in all envs.
 function RouteAnimator() {
   const map = useMap();
 
   useEffect(() => {
     const container = map.getContainer();
     let frame: number;
-    let aOffset = 0;
-    let iOffset = 0;
+    let offset = 0;
 
     function tick() {
-      aOffset = (aOffset + 0.5) % 18;
-      iOffset = (iOffset + 0.2) % 12;
-
-      container.querySelectorAll<SVGPathElement>("path.route-active").forEach((p) => {
-        p.setAttribute("stroke-dashoffset", String(aOffset));
-      });
-      container.querySelectorAll<SVGPathElement>("path.route-inactive").forEach((p) => {
-        p.setAttribute("stroke-dashoffset", String(iOffset));
-      });
-
+      offset = (offset + 0.35) % 12;
+      container
+        .querySelectorAll<SVGPathElement>("path.leaflet-interactive")
+        .forEach((p) => {
+          p.setAttribute("stroke-dashoffset", String(offset));
+        });
       frame = requestAnimationFrame(tick);
     }
 

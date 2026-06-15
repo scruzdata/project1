@@ -332,6 +332,33 @@ function CruiseLinesPage() {
                             fileName: "[project]/src/app/cruise-lines/page.tsx",
                             lineNumber: 16,
                             columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "https://www.logitravel.com/",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-all duration-200 hover:gap-2.5",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    children: "Ver más en Logitravel"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/cruise-lines/page.tsx",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    "aria-hidden": "true",
+                                    children: "→"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/cruise-lines/page.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/cruise-lines/page.tsx",
+                            lineNumber: 20,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
@@ -352,17 +379,17 @@ function CruiseLinesPage() {
                         cruiseLines: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$cruiseLines$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cruiseLines"]
                     }, void 0, false, {
                         fileName: "[project]/src/app/cruise-lines/page.tsx",
-                        lineNumber: 26,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/cruise-lines/page.tsx",
-                    lineNumber: 25,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/cruise-lines/page.tsx",
-                lineNumber: 24,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -378,7 +405,7 @@ function CruiseLinesPage() {
                                     children: "Comparativa interactiva"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cruise-lines/page.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -386,7 +413,7 @@ function CruiseLinesPage() {
                                     children: "Compara todas las compañías"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cruise-lines/page.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -394,31 +421,31 @@ function CruiseLinesPage() {
                                     children: "Filtra por categoría o ambiente y ordena por cualquier puntuación. Encuentra la compañía que mejor se adapta a vuestro viaje."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cruise-lines/page.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/cruise-lines/page.tsx",
-                            lineNumber: 33,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$cruise$2d$lines$2f$components$2f$ComparisonTable$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ComparisonTable"], {
                             cruiseLines: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$cruiseLines$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cruiseLines"]
                         }, void 0, false, {
                             fileName: "[project]/src/app/cruise-lines/page.tsx",
-                            lineNumber: 41,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/cruise-lines/page.tsx",
-                    lineNumber: 32,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/cruise-lines/page.tsx",
-                lineNumber: 31,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
