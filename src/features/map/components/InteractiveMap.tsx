@@ -19,8 +19,9 @@ import { ITINERARY_COLORS, MAP_DEFAULTS, TILE_LAYER } from "../map.config";
 import { createCityIcon } from "./MapPin";
 
 // ── Animates stroke-dashoffset via rAF using leaflet-interactive ──
-// Uses path.leaflet-interactive — always present on Leaflet SVG paths,
-// regardless of pathOptions.className, making it reliable in all envs.
+// Reads each path's SVG `d` attribute to detect whether the route goes
+// left→right or right→left, then applies the correct sign so dashes
+// always travel from destinationIds[0] to destinationIds[last].
 function RouteAnimator() {
   const map = useMap();
 
@@ -28,13 +29,25 @@ function RouteAnimator() {
     const container = map.getContainer();
     let frame: number;
     let offset = 0;
+    // Cache direction per element: -1 = move right (west→east), 1 = move left (east→west)
+    const dirCache = new WeakMap<SVGPathElement, number>();
+
+    function getDir(p: SVGPathElement): number {
+      if (dirCache.has(p)) return dirCache.get(p)!;
+      const nums = (p.getAttribute("d") ?? "").match(/[-\d.]+/g)?.map(Number) ?? [];
+      const startX = nums[0] ?? 0;
+      const endX = nums[nums.length - 2] ?? startX;
+      const dir = endX >= startX ? -1 : 1;
+      dirCache.set(p, dir);
+      return dir;
+    }
 
     function tick() {
-      offset = (offset + 0.35) % 12;
+      offset = (offset + 0.35) % 18;
       container
         .querySelectorAll<SVGPathElement>("path.leaflet-interactive")
         .forEach((p) => {
-          p.setAttribute("stroke-dashoffset", String(offset));
+          p.setAttribute("stroke-dashoffset", String(getDir(p) * offset));
         });
       frame = requestAnimationFrame(tick);
     }
