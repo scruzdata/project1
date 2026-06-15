@@ -65,13 +65,10 @@ const mainNav = [
     }
 ];
 const secondaryNav = [
+    // { label: "Favoritos",  href: "/favorites" },
     {
-        label: "Favoritos",
-        href: "/favorites"
-    },
-    {
-        label: "Presupuesto",
-        href: "/budget"
+        label: "Calendario",
+        href: "/calendar"
     }
 ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

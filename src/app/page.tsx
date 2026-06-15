@@ -5,29 +5,32 @@ import { itineraries } from "@/data/itineraries";
 import { cities } from "@/data/cities";
 import { HeroSection } from "@/features/home/components/HeroSection";
 import { TributeSection } from "@/features/home/components/TributeSection";
+import { TributeModal } from "@/features/home/components/TributeModal";
 import { ItinerarySlider } from "@/features/home/components/ItinerarySlider";
 
 export const metadata: Metadata = { title: "Regalo Jubilación" };
+
+const FAMILY_PHOTOS = [
+  { src: "/images/family/family1.png", alt: "" },
+  { src: "/images/family/family2.png", alt: "" },
+  { src: "/images/family/family3.png", alt: "" },
+  { src: "/images/family/family4.png", alt: "" },
+  { src: "/images/family/family5.png", alt: "" },
+  { src: "/images/family/family6.png", alt: "" },
+];
 
 export default function HomePage() {
   const sorted = [...itineraries].sort((a, b) => b.score - a.score);
 
   return (
     <>
+      <TributeModal photos={FAMILY_PHOTOS} />
+
       {/* ── Hero ─────────────────────────────────────────────── */}
       <HeroSection backgroundImage="/images/hero.jpg" />
 
       {/* ── Tribute ──────────────────────────────────────────── */}
-      <TributeSection
-        photos={[
-          { src: "/images/family/family1.png", alt: "" },
-          { src: "/images/family/family2.png", alt: "" },
-          { src: "/images/family/family3.png", alt: "" },
-          { src: "/images/family/family4.png", alt: "" },
-          { src: "/images/family/family5.png", alt: "" },
-          { src: "/images/family/family6.png", alt: "" },
-        ]}
-      />
+      <TributeSection photos={FAMILY_PHOTOS} />
 
       {/* ── Featured itineraries ─────────────────────────────── */}
       <section className="section">

@@ -13,6 +13,6 @@ export const mainNav: NavItem[] = [
 ];
 
 export const secondaryNav: NavItem[] = [
-  { label: "Favoritos",  href: "/favorites" },
-  { label: "Presupuesto", href: "/budget" },
+  // { label: "Favoritos",  href: "/favorites" },
+  { label: "Calendario", href: "/calendar" },
 ];
