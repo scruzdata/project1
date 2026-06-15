@@ -57,6 +57,10 @@ __turbopack_context__.s([
 ]);
 const mainNav = [
     {
+        label: "Inicio",
+        href: "/"
+    },
+    {
         label: "Cruceros",
         href: "/cruise-lines"
     },

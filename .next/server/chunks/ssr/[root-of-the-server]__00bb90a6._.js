@@ -68,7 +68,7 @@ const cities = [
             "Molinos de viento",
             "Playa Paradise"
         ],
-        coverImage: "https://blog.vayacruceros.com/wp-content/uploads/2025/10/visitas-en-la-isla-de-mykonos.jpg"
+        coverImage: "https://www.grecia.info/es/wp-content/uploads/sites/166/mykonos-hd.jpg"
     },
     {
         id: "rhodes",
@@ -96,7 +96,7 @@ const cities = [
             "Palacio del Gran Maestre",
             "Lindos"
         ],
-        coverImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWHVxGtqxt2V3lBc2Buo51cwFtIh7EayHag&s"
+        coverImage: "https://cdn.holidayguru.es/wp-content/uploads/2017/01/Akropolis_lindos_rhodos_shutterstock_326789276.jpg"
     },
     {
         id: "kusadasi",
@@ -153,7 +153,7 @@ const cities = [
             "Gran Puerto",
             "Mdina"
         ],
-        coverImage: "/cities/malta.webp"
+        coverImage: "https://estaticos-cdn.prensaiberica.es/clip/8bef1f3b-d505-4b12-b7b5-b30428530a86_16-9-discover-aspect-ratio_default_0.jpg"
     },
     {
         id: "palma",
@@ -181,7 +181,7 @@ const cities = [
             "Casco Antiguo",
             "Castillo de Bellver"
         ],
-        coverImage: "/cities/palma.webp"
+        coverImage: "https://abcmallorcastorage.blob.core.windows.net/images/2022/01/palma-mallorca-7-copy.jpg"
     },
     {
         id: "marseille",
@@ -209,7 +209,7 @@ const cities = [
             "Notre-Dame de la Garde",
             "Calanques"
         ],
-        coverImage: "/cities/marseille.webp"
+        coverImage: "https://www.civitatis.com/blog/wp-content/uploads/2024/11/vista-puerto-viejo-marsella.jpg"
     },
     {
         id: "la-spezia",
@@ -237,7 +237,7 @@ const cities = [
             "Portovenere",
             "Golfo de La Spezia"
         ],
-        coverImage: "/cities/la-spezia.webp"
+        coverImage: "https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Spezia.jpg"
     },
     {
         id: "rome",
@@ -265,7 +265,7 @@ const cities = [
             "Ciudad del Vaticano",
             "Fontana di Trevi"
         ],
-        coverImage: "/cities/rome.webp"
+        coverImage: "https://media.istockphoto.com/id/539115110/es/foto/colosseum-in-rome-italy-y-sol-de-la-ma%C3%B1ana.jpg?s=612x612&w=0&k=20&c=S2BE7bvASd4hm6Yp0VbtvaGnnqTR4p5HJ-6RfDjR-MQ="
     },
     {
         id: "naples",
@@ -293,7 +293,7 @@ const cities = [
             "Costa Amalfitana",
             "Pizza Napoletana"
         ],
-        coverImage: "/cities/naples.webp"
+        coverImage: "https://losviajesdemary.com/wp-content/uploads/2015/10/Imperdibles-de-Napoles.png"
     },
     {
         id: "malaga",
@@ -322,7 +322,7 @@ const cities = [
             "Museo Picasso",
             "Playa La Malagueta"
         ],
-        coverImage: "/cities/malaga.webp"
+        coverImage: "https://content.r9cdn.net/rimg/dimg/ee/b1/8afb451d-city-5309-15cef627e8c.jpg?width=1366&height=768&crop=true&cropStrategy=attention"
     },
     {
         id: "cadiz",
@@ -351,7 +351,7 @@ const cities = [
             "Catedral",
             "Playas del Atlántico"
         ],
-        coverImage: "/cities/cadiz.webp"
+        coverImage: "https://static-dm.barcelo.com/is/image/barcelo/puente-de-agosto-cadiz?&&fmt=webp-alpha&qlt=75&wid=1300&fit=crop,1"
     },
     {
         id: "lisbon",
@@ -380,7 +380,7 @@ const cities = [
             "Torre de Belém",
             "Miradores"
         ],
-        coverImage: "/cities/lisbon.webp"
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/4/41/Lisbon_%2836831596786%29_%28cropped%29.jpg"
     },
     {
         id: "porto",
@@ -408,7 +408,7 @@ const cities = [
             "Bodegas de vino",
             "Puente Dom Luís"
         ],
-        coverImage: "/cities/porto.webp"
+        coverImage: "https://blog.blablacar.es/wp-content/uploads/2014/10/oporto.webp"
     },
     {
         id: "tangier",
@@ -437,7 +437,7 @@ const cities = [
             "Kasbah",
             "Estrecho de Gibraltar"
         ],
-        coverImage: "/cities/tangier.webp"
+        coverImage: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/01/tanger-chefchaouen-888.jpg"
     },
     {
         id: "barcelona",
@@ -466,7 +466,7 @@ const cities = [
             "Las Ramblas",
             "Parc Güell"
         ],
-        coverImage: "/cities/barcelona.webp"
+        coverImage: "https://i0.wp.com/armandotuviaje.blog/wp-content/uploads/2017/06/barcelona1.jpg?fit=1920%2C1080&ssl=1"
     },
     {
         id: "niza",
@@ -494,11 +494,11 @@ const cities = [
             "Casco antiguo (Vieux Nice)",
             "Colina del Castillo"
         ],
-        coverImage: "/cities/nice.webp"
+        coverImage: "https://content-viajes.nationalgeographic.com.es/medio/2025/12/12/adobestock_9015a079_355868025_251212151617_1280x879.webp"
     },
     {
         id: "katakolon",
-        name: "Katákolon",
+        name: "Katákolon (Grecia)",
         countryId: "greece",
         latitude: 37.6415,
         longitude: 21.3180,
@@ -522,7 +522,7 @@ const cities = [
             "Puerto de Katákolon",
             "Playas cercanas"
         ],
-        coverImage: "/cities/katakolon.webp"
+        coverImage: "https://www.shore2shore.es/media/s2scms/tours/images/carousel/2_FKYU93t.jpg"
     },
     {
         id: "pireo",
@@ -550,7 +550,7 @@ const cities = [
             "Plaka",
             "Puerto de Mikrolimano"
         ],
-        coverImage: "/cities/piraeus.webp"
+        coverImage: "https://content-historia.nationalgeographic.com.es/medio/2025/01/28/istock_56cd2f10_1028749698_250128165345_1280x735.webp"
     },
     {
         id: "corfu",
@@ -579,7 +579,7 @@ const cities = [
             "Liston Promenade",
             "Paleokastritsa"
         ],
-        coverImage: "/cities/corfu.webp"
+        coverImage: "https://image.urlaubspiraten.de/640/image/upload/v1603282560/mediavault_images/ogxtfowfm7czsefouxg4.jpg"
     },
     {
         id: "kotor",
@@ -608,7 +608,7 @@ const cities = [
             "Bay of Kotor",
             "St. Tryphon Cathedral"
         ],
-        coverImage: "/cities/kotor.webp"
+        coverImage: "https://www.belmondo-cruises.com/upld/xl/1452/kotor-crucero-a-montenegro.webp"
     },
     {
         id: "zadar",
@@ -637,7 +637,7 @@ const cities = [
             "Roman Forum",
             "St. Donatus Church"
         ],
-        coverImage: "/cities/zadar.webp"
+        coverImage: "https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2017/09/Vistas-de-Zadar.jpg?resize=600%2C400&ssl=1"
     },
     {
         id: "koper",
@@ -666,7 +666,7 @@ const cities = [
             "Cathedral of the Assumption",
             "Koper Promenade"
         ],
-        coverImage: "/cities/koper.webp"
+        coverImage: "https://visitslovenia.b-cdn.net/city/koper.jpg"
     },
     {
         id: "ravenna",
@@ -696,7 +696,135 @@ const cities = [
             "Basilica di Sant'Apollinare Nuovo",
             "Dante's Tomb"
         ],
-        coverImage: "/cities/ravenna.webp"
+        coverImage: "https://www.travelemiliaromagna.it/wp-content/uploads/2025/02/ravenna-piazza-popolo-ph-rudy-balasko-via-shutterstock.jpg"
+    },
+    {
+        id: "luxor",
+        name: "Luxor",
+        countryId: "egypt",
+        latitude: 25.6872,
+        longitude: 32.6396,
+        walkingDifficulty: "easy",
+        safety: 4,
+        beautyScore: 8,
+        foodScore: 7,
+        historyScore: 10,
+        temperatureSummer: 42,
+        temperatureSpring: 28,
+        recommendedHours: 6,
+        bestMonths: [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+        ],
+        description: "Luxor, la antigua Tebas, fue la capital del Antiguo Egipto. Esta ciudad a orillas del Nilo alberga monumentos faraónicos únicos: los templos de Karnak y Luxor, la necrópolis del Valle de los Reyes (tumbas de los faraones) y el templo de Hatshepsut.",
+        highlights: [
+            "Valle de los Reyes",
+            "Templo de Karnak",
+            "Templo de Luxor",
+            "Colosos de Memn\u00f3n"
+        ],
+        coverImage: "https://images.trvl-media.com/place/6112078/3e433b58-07d7-4877-acf4-3e921119eaec.jpg?impolicy=fcrop&w=800&h=600&p=1&q=medium"
+    },
+    {
+        id: "asuan",
+        name: "Asu\u00e1n",
+        countryId: "egypt",
+        latitude: 24.0889,
+        longitude: 32.8998,
+        walkingDifficulty: "easy",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 7,
+        historyScore: 7,
+        temperatureSummer: 44,
+        temperatureSpring: 30,
+        recommendedHours: 5,
+        bestMonths: [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+        ],
+        description: "Asu\u00e1n es la ciudad más meridional del trayecto y puerta del Alto Egipto. Destacan el gran **Templo de Philae** dedicado a Isis, la majestuosa **Alta Presa de Asu\u00e1n** y el famoso **Obelisco Inacabado** de granito. Desde Asu\u00e1n también parten las excursiones al Templo de Abu Simbel.",
+        highlights: [
+            "Templo de Philae",
+            "Obelisco Inacabado",
+            "Alta Presa de Asu\u00e1n",
+            "Paseo en faluca"
+        ],
+        coverImage: "https://realegypt.com/wp-content/uploads/2023/12/Abu-Simbel-1024x683.jpg"
+    },
+    {
+        id: "edfu",
+        name: "Edfu",
+        countryId: "egypt",
+        latitude: 24.9778,
+        longitude: 32.8733,
+        walkingDifficulty: "easy",
+        safety: 4,
+        beautyScore: 7,
+        foodScore: 6,
+        historyScore: 8,
+        temperatureSummer: 44,
+        temperatureSpring: 30,
+        recommendedHours: 3,
+        bestMonths: [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+        ],
+        description: "Edfu es un pequeño pueblo ribere\u00f1o famoso por su imponente **Templo de Horus** (Templo de Edfu), uno de los mejor conservados de Egipto. El templo fue construido en la era ptolemaica y está dedicado al dios halcón Horus.",
+        highlights: [
+            "Templo de Horus (Edfu)",
+            "Torre del Silencio",
+            "Mercado local",
+            "Passeo por el Nilo"
+        ],
+        coverImage: "https://www.civitatis.com/f/pois/ChIJq06sCxPtSRQR5dXzr551YPI.jpg"
+    },
+    {
+        id: "kom-ombo",
+        name: "Kom Ombo",
+        countryId: "egypt",
+        latitude: 24.4796,
+        longitude: 32.9459,
+        walkingDifficulty: "easy",
+        safety: 4,
+        beautyScore: 7,
+        foodScore: 6,
+        historyScore: 7,
+        temperatureSummer: 44,
+        temperatureSpring: 30,
+        recommendedHours: 3,
+        bestMonths: [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+        ],
+        description: "Kom Ombo es un pueblo junto al Nilo conocido por su **Templo Doble de Kom Ombo**, de origen ptolemaico y dedicado simultáneamente a los dioses Sobek (cocodrilo) y Haroeris. Junto al templo se encuentra un pequeño museo de cocodrilos momificados.",
+        highlights: [
+            "Templo Doble de Kom Ombo",
+            "Museo del Cocodrilo",
+            "Atardecer en el Nilo",
+            "Aldea tradicional"
+        ],
+        coverImage: "https://www.egipto.com/wp-content/uploads/2022/02/templo-kom-ombo-optimized.jpg"
     }
 ];
 }),

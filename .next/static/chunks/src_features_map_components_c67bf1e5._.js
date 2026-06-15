@@ -47,12 +47,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$lea
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/Marker.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/Popup.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/hooks.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/map/map.config.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$components$2f$MapPin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/map/components/MapPin.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -146,7 +148,7 @@ function InteractiveMap(param) {
                 attribution: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].attribution
             }, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 90,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapController, {
@@ -155,7 +157,7 @@ function InteractiveMap(param) {
                 itineraries: itineraries
             }, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 95,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             itineraries.map((it)=>{
@@ -172,12 +174,12 @@ function InteractiveMap(param) {
                         color,
                         weight: isSelected ? 3 : 1.5,
                         opacity: isSelected ? 0.9 : 0.3,
-                        dashArray: isSelected ? undefined : "6 6",
+                        dashArray: isSelected ? "12 6" : "6 6",
                         className: isSelected ? "route-active" : "route-inactive"
                     }
                 }, it.id, false, {
                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                    lineNumber: 111,
+                    lineNumber: 112,
                     columnNumber: 11
                 }, this);
             }),
@@ -192,87 +194,115 @@ function InteractiveMap(param) {
                     zIndexOffset: isHighlighted ? 100 : 0,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popup"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "city-popup-content",
+                            className: "city-popup-wrapper",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "city-popup-name",
-                                    children: city.name
+                                city.coverImage && // eslint-disable-next-line @next/next/no-img-element
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: city.coverImage,
+                                    alt: city.name,
+                                    className: "city-popup-image"
                                 }, void 0, false, {
                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 137,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "city-popup-desc",
-                                    children: city.description
-                                }, void 0, false, {
-                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 138,
-                                    columnNumber: 17
+                                    lineNumber: 140,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "city-popup-scores",
+                                    className: "city-popup-content",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: [
-                                                "✨ ",
-                                                city.beautyScore,
-                                                "/10"
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "city-popup-name",
+                                            children: city.name
+                                        }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 147,
                                             columnNumber: 19
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: [
-                                                "🍽 ",
-                                                city.foodScore,
-                                                "/10"
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "city-popup-desc",
+                                            children: city.description
+                                        }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 148,
                                             columnNumber: 19
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "city-popup-scores",
                                             children: [
-                                                "🏛 ",
-                                                city.historyScore,
-                                                "/10"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: [
+                                                        "✨ ",
+                                                        city.beautyScore,
+                                                        "/10"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                                    lineNumber: 150,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: [
+                                                        "🍽 ",
+                                                        city.foodScore,
+                                                        "/10"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: [
+                                                        "🏛 ",
+                                                        city.historyScore,
+                                                        "/10"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 21
+                                                }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 149,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/cities/".concat(city.id),
+                                            className: "city-popup-link",
+                                            children: "Ver ciudad →"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                            lineNumber: 154,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 146,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                            lineNumber: 136,
+                            lineNumber: 137,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                        lineNumber: 135,
+                        lineNumber: 136,
                         columnNumber: 13
                     }, this)
                 }, city.id, false, {
                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                    lineNumber: 129,
+                    lineNumber: 130,
                     columnNumber: 11
                 }, this);
             })
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-        lineNumber: 81,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
 }

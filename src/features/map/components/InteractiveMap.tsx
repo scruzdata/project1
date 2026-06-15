@@ -11,6 +11,7 @@ import {
   Popup,
   useMap,
 } from "react-leaflet";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import type { Itinerary } from "@/types";
 import type { City } from "@/data/city";
@@ -115,7 +116,7 @@ export function InteractiveMap({
               color,
               weight: isSelected ? 3 : 1.5,
               opacity: isSelected ? 0.9 : 0.3,
-              dashArray: isSelected ? undefined : "6 6",
+              dashArray: isSelected ? "12 6" : "6 6",
               className: isSelected ? "route-active" : "route-inactive",
             }}
           />
@@ -133,13 +134,26 @@ export function InteractiveMap({
             zIndexOffset={isHighlighted ? 100 : 0}
           >
             <Popup>
-              <div className="city-popup-content">
-                <p className="city-popup-name">{city.name}</p>
-                <p className="city-popup-desc">{city.description}</p>
-                <div className="city-popup-scores">
-                  <span>✨ {city.beautyScore}/10</span>
-                  <span>🍽 {city.foodScore}/10</span>
-                  <span>🏛 {city.historyScore}/10</span>
+              <div className="city-popup-wrapper">
+                {city.coverImage && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={city.coverImage}
+                    alt={city.name}
+                    className="city-popup-image"
+                  />
+                )}
+                <div className="city-popup-content">
+                  <p className="city-popup-name">{city.name}</p>
+                  <p className="city-popup-desc">{city.description}</p>
+                  <div className="city-popup-scores">
+                    <span>✨ {city.beautyScore}/10</span>
+                    <span>🍽 {city.foodScore}/10</span>
+                    <span>🏛 {city.historyScore}/10</span>
+                  </div>
+                  <Link href={`/cities/${city.id}`} className="city-popup-link">
+                    Ver ciudad →
+                  </Link>
                 </div>
               </div>
             </Popup>

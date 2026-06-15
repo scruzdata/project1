@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { itineraries } from "@/data/itineraries";
 import { cities } from "@/data/cities";
 import { HeroSection } from "@/features/home/components/HeroSection";
 import { TributeSection } from "@/features/home/components/TributeSection";
+import { ItinerarySlider } from "@/features/home/components/ItinerarySlider";
 
 export const metadata: Metadata = { title: "Regalo Jubilación" };
 
 export default function HomePage() {
-  const featured = [...itineraries].sort((a, b) => b.score - a.score).slice(0, 3);
+  const sorted = [...itineraries].sort((a, b) => b.score - a.score);
 
   return (
     <>
@@ -34,42 +36,31 @@ export default function HomePage() {
             <p className="eyebrow mb-2">Rutas destacadas</p>
             <h2 className="heading-2">Los mejores itinerarios</h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {featured.map((it) => (
-              <Link
-                key={it.id}
-                href={`/itineraries/${it.id}`}
-                className="card overflow-hidden group"
-              >
-                <div
-                  className="h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url(${it.image})` }}
-                />
-                <div className="p-5 space-y-1">
-                  <p className="font-heading text-base font-semibold">{it.name}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {it.durationMin}–{it.durationMax} noches · {it.departurePorts[0]}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <ItinerarySlider itineraries={sorted} />
         </div>
       </section>
 
       {/* ── Destinations teaser ──────────────────────────────── */}
-      <section className="section border-t border-border bg-muted/20">
-        <div className="container-site space-y-10">
+      <section className="section border-t border-border relative overflow-hidden">
+        <Image
+          src="/images/islas_griegas.webp"
+          alt="Islas Griegas"
+          fill
+          className="object-cover object-center"
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container-site space-y-10 relative z-10">
           <div>
-            <p className="eyebrow mb-2">Destinos</p>
-            <h2 className="heading-2">Lugares que os esperan</h2>
+            <p className="eyebrow mb-2 text-white/70">Destinos</p>
+            <h2 className="heading-2 text-white">Lugares que os esperan</h2>
           </div>
           <div className="flex flex-wrap gap-3">
             {cities.slice(0, 8).map((city) => (
               <Link
                 key={city.id}
                 href={`/cities/${city.id}`}
-                className="card px-4 py-2 text-sm font-medium hover:ring-1 hover:ring-accent/40 transition-all duration-200"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 text-sm font-medium rounded-lg hover:bg-white/20 hover:border-white/40 transition-all duration-200"
               >
                 {city.name}
               </Link>

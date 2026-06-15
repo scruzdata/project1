@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
 import { itineraries } from "@/data/itineraries";
+import { cities } from "@/data/cities";
 import { ItineraryDetail } from "@/features/itineraries/components/ItineraryDetail";
 
 interface Props {
@@ -37,7 +38,7 @@ export default async function ItineraryDetailPage({ params }: Props) {
         </Link>
       </div>
 
-      <ItineraryDetail itinerary={itinerary} />
+      <ItineraryDetail itinerary={itinerary} cities={cities} />
 
       {/* Footer CTA */}
       <section className="section-sm border-t border-border">

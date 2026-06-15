@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Clock, Anchor, MapPin, Sparkles, Heart } from "lucide-react";
 import type { Itinerary } from "@/types";
+import type { City } from "@/data/city";
 import {
   DIFFICULTY_CONFIG,
   ALL_MONTHS,
@@ -10,9 +11,11 @@ import {
 } from "../itineraries.config";
 import { DifficultyBadge } from "./DifficultyBadge";
 import { MonthBadge } from "./MonthBadge";
+import { MapWrapper } from "@/features/map/components/MapWrapper";
 
 interface ItineraryDetailProps {
   itinerary: Itinerary;
+  cities: City[];
 }
 
 // Reusable fade-up wrapper for whileInView sections
@@ -38,7 +41,7 @@ function Section({
   );
 }
 
-export function ItineraryDetail({ itinerary }: ItineraryDetailProps) {
+export function ItineraryDetail({ itinerary, cities }: ItineraryDetailProps) {
   const diff = DIFFICULTY_CONFIG[itinerary.difficulty];
 
   return (
@@ -129,6 +132,15 @@ export function ItineraryDetail({ itinerary }: ItineraryDetailProps) {
                 )}
               </motion.div>
             ))}
+          </div>
+
+          {/* ── Inline map ───────────────────────────────────── */}
+          <div className="mt-8 h-[420px] md:h-[500px] rounded-2xl overflow-hidden border border-border">
+            <MapWrapper
+              itineraries={[itinerary]}
+              cities={cities}
+              selectedItineraryId={itinerary.id}
+            />
           </div>
         </Section>
 

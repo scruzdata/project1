@@ -4,6 +4,7 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
+  { label: "Inicio",   href: "/" },
   { label: "Cruceros",   href: "/cruise-lines" },
   { label: "Rutas",      href: "/itineraries" },
   { label: "Destinos",   href: "/destinations" },

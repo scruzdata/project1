@@ -1,7 +1,4 @@
 import type { Itinerary } from "@/types/itinerary";
-import { STORAGE_KEY_PANEL_POSITION_PREFIX } from "next/dist/next-devtools/dev-overlay/shared";
-import { Poiret_One } from "next/font/google";
-import { Z_DATA_ERROR } from "zlib";
 
 export const itineraries: Itinerary[] = [
   {
@@ -34,9 +31,9 @@ export const itineraries: Itinerary[] = [
   },
   {
     id: "italia-turquia-grecia",
-    name: "Italia-Turquia-Grecia",
+    name: "Italia-Grecia-Turquia",
     score: 9.1,
-    durationMin: 0,
+    durationMin: 10,
     durationMax: 12,
     departurePorts: ["Barcelona", "Roma"],
     destinationIds: ["barcelona", "niza", "la-spezia", "rome", "naples","katakolon","Kusadasi","santorini", "pireo"],
@@ -60,4 +57,19 @@ export const itineraries: Itinerary[] = [
     highlights: ["La Alhambra", "Miradores de Lisboa", "Medina marroquí"],
     image: "/images/marruecos.jpg",
   },
+  {
+    id: "crucero-nilo",
+    name: "Crucero Clásico por el Nilo",
+    score: 9.0,
+    durationMin: 4,
+    durationMax: 8,
+    departurePorts: ["Luxor", "Asu\u00e1n"],
+    destinationIds: ["asuan","kom-ombo","edfu","luxor"],
+    bestMonths: [10, 11, 12, 1, 2, 3, 4],
+    difficulty: "easy",
+    idealFor: ["Cultura", "Descanso", "Historia"],
+    highlights: ["Templo de Karnak", "Valle de los Reyes", "Templo de Kom Ombo", "Templo de Fil\u00e9"],
+    image: "https://www.kiwakatravel.com/wp-content/uploads/2021/12/Egipto-portada.jpeg"
+  }
+  
 ];
