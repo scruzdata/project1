@@ -176,13 +176,7 @@ const mainNav = [
         href: "/calendar"
     }
 ];
-const secondaryNav = [
-    // { label: "Favoritos",  href: "/favorites" },
-    {
-        label: "Calendario",
-        href: "/calendar"
-    }
-];
+const secondaryNav = [];
 }),
 "[project]/src/components/layout/Footer.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
