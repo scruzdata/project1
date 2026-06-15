@@ -18,6 +18,37 @@ import type { City } from "@/data/city";
 import { ITINERARY_COLORS, MAP_DEFAULTS, TILE_LAYER } from "../map.config";
 import { createCityIcon } from "./MapPin";
 
+// ── Animates stroke-dashoffset via rAF — reliable in all envs ──
+function RouteAnimator() {
+  const map = useMap();
+
+  useEffect(() => {
+    const container = map.getContainer();
+    let frame: number;
+    let aOffset = 0;
+    let iOffset = 0;
+
+    function tick() {
+      aOffset = (aOffset + 0.5) % 18;
+      iOffset = (iOffset + 0.2) % 12;
+
+      container.querySelectorAll<SVGPathElement>("path.route-active").forEach((p) => {
+        p.setAttribute("stroke-dashoffset", String(aOffset));
+      });
+      container.querySelectorAll<SVGPathElement>("path.route-inactive").forEach((p) => {
+        p.setAttribute("stroke-dashoffset", String(iOffset));
+      });
+
+      frame = requestAnimationFrame(tick);
+    }
+
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [map]);
+
+  return null;
+}
+
 // ── Flies to the bounds of the selected itinerary on change ────
 function MapController({
   cityMap,
@@ -79,25 +110,6 @@ export function InteractiveMap({
   );
 
   return (
-    <>
-    <style>{`
-      @keyframes march-active {
-        from { stroke-dashoffset: 0; }
-        to   { stroke-dashoffset: -18; }
-      }
-      @keyframes march-inactive {
-        from { stroke-dashoffset: 0; }
-        to   { stroke-dashoffset: -12; }
-      }
-      path.route-active {
-        stroke-dasharray: 12 6 !important;
-        animation: march-active 0.6s linear infinite;
-      }
-      path.route-inactive {
-        stroke-dasharray: 6 6 !important;
-        animation: march-inactive 1.2s linear infinite;
-      }
-    `}</style>
     <MapContainer
       center={MAP_DEFAULTS.center}
       zoom={MAP_DEFAULTS.zoom}
@@ -142,6 +154,8 @@ export function InteractiveMap({
         );
       })}
 
+      <RouteAnimator />
+
       {/* City markers */}
       {cities.map((city) => {
         const isHighlighted = selectedDestinationIds.has(city.id);
@@ -180,6 +194,5 @@ export function InteractiveMap({
         );
       })}
     </MapContainer>
-    </>
   );
 }

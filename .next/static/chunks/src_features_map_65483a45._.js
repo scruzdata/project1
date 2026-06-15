@@ -88,7 +88,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$them
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/map/map.config.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$components$2f$MapPin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/map/components/MapPin.tsx [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -97,10 +97,51 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 ;
+// ── Animates stroke-dashoffset via rAF — reliable in all envs ──
+function RouteAnimator() {
+    _s();
+    const map = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMap"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "RouteAnimator.useEffect": ()=>{
+            const container = map.getContainer();
+            let frame;
+            let aOffset = 0;
+            let iOffset = 0;
+            function tick() {
+                aOffset = (aOffset + 0.5) % 18;
+                iOffset = (iOffset + 0.2) % 12;
+                container.querySelectorAll("path.route-active").forEach({
+                    "RouteAnimator.useEffect.tick": (p)=>{
+                        p.setAttribute("stroke-dashoffset", String(aOffset));
+                    }
+                }["RouteAnimator.useEffect.tick"]);
+                container.querySelectorAll("path.route-inactive").forEach({
+                    "RouteAnimator.useEffect.tick": (p)=>{
+                        p.setAttribute("stroke-dashoffset", String(iOffset));
+                    }
+                }["RouteAnimator.useEffect.tick"]);
+                frame = requestAnimationFrame(tick);
+            }
+            frame = requestAnimationFrame(tick);
+            return ({
+                "RouteAnimator.useEffect": ()=>cancelAnimationFrame(frame)
+            })["RouteAnimator.useEffect"];
+        }
+    }["RouteAnimator.useEffect"], [
+        map
+    ]);
+    return null;
+}
+_s(RouteAnimator, "IoceErwr5KVGS9kN4RQ1bOkYMAg=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMap"]
+    ];
+});
+_c = RouteAnimator;
 // ── Flies to the bounds of the selected itinerary on change ────
 function MapController(param) {
     let { cityMap, selectedItineraryId, itineraries } = param;
-    _s();
+    _s1();
     const map = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMap"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "MapController.useEffect": ()=>{
@@ -137,15 +178,15 @@ function MapController(param) {
     ]);
     return null;
 }
-_s(MapController, "IoceErwr5KVGS9kN4RQ1bOkYMAg=", false, function() {
+_s1(MapController, "IoceErwr5KVGS9kN4RQ1bOkYMAg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMap"]
     ];
 });
-_c = MapController;
+_c1 = MapController;
 function InteractiveMap(param) {
     let { itineraries, cities, selectedItineraryId } = param;
-    _s1();
+    _s2();
     const { resolvedTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     const isDark = resolvedTheme === "dark";
     const cityMap = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
@@ -170,198 +211,193 @@ function InteractiveMap(param) {
         itineraries,
         selectedItineraryId
     ]);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$MapContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MapContainer"], {
+        center: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].center,
+        zoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].zoom,
+        minZoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].minZoom,
+        maxZoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].maxZoom,
+        className: "h-full w-full",
+        zoomControl: false,
+        scrollWheelZoom: true,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
-                children: "\n      @keyframes march-active {\n        from { stroke-dashoffset: 0; }\n        to   { stroke-dashoffset: -18; }\n      }\n      @keyframes march-inactive {\n        from { stroke-dashoffset: 0; }\n        to   { stroke-dashoffset: -12; }\n      }\n      path.route-active {\n        stroke-dasharray: 12 6 !important;\n        animation: march-active 0.6s linear infinite;\n      }\n      path.route-inactive {\n        stroke-dasharray: 6 6 !important;\n        animation: march-inactive 1.2s linear infinite;\n      }\n    "
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$TileLayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TileLayer"], {
+                url: isDark ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].urlDark : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].url,
+                attribution: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].attribution
             }, void 0, false, {
                 fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 83,
-                columnNumber: 5
+                lineNumber: 122,
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$MapContainer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MapContainer"], {
-                center: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].center,
-                zoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].zoom,
-                minZoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].minZoom,
-                maxZoom: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MAP_DEFAULTS"].maxZoom,
-                className: "h-full w-full",
-                zoomControl: false,
-                scrollWheelZoom: true,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$TileLayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TileLayer"], {
-                        url: isDark ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].urlDark : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].url,
-                        attribution: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TILE_LAYER"].attribution
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                        lineNumber: 110,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapController, {
-                        cityMap: cityMap,
-                        selectedItineraryId: selectedItineraryId,
-                        itineraries: itineraries
-                    }, void 0, false, {
-                        fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                        lineNumber: 115,
-                        columnNumber: 7
-                    }, this),
-                    itineraries.map((it)=>{
-                        const isSelected = it.id === selectedItineraryId;
-                        var _ITINERARY_COLORS_it_id;
-                        const color = (_ITINERARY_COLORS_it_id = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ITINERARY_COLORS"][it.id]) !== null && _ITINERARY_COLORS_it_id !== void 0 ? _ITINERARY_COLORS_it_id : "#d4af37";
-                        const positions = it.destinationIds.map((id)=>cityMap.get(id)).filter((c)=>!!c).map((c)=>[
-                                c.latitude,
-                                c.longitude
-                            ]);
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Polyline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Polyline"], {
-                            positions: positions,
-                            pathOptions: {
-                                color,
-                                weight: isSelected ? 3 : 1.5,
-                                opacity: isSelected ? 0.9 : 0.3,
-                                dashArray: isSelected ? "12 6" : "6 6",
-                                className: isSelected ? "route-active" : "route-inactive"
-                            }
-                        }, it.id, false, {
-                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                            lineNumber: 131,
-                            columnNumber: 11
-                        }, this);
-                    }),
-                    cities.map((city)=>{
-                        const isHighlighted = selectedDestinationIds.has(city.id);
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Marker"], {
-                            position: [
-                                city.latitude,
-                                city.longitude
-                            ],
-                            icon: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$components$2f$MapPin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createCityIcon"])(isHighlighted),
-                            zIndexOffset: isHighlighted ? 100 : 0,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popup"], {
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "city-popup-wrapper",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MapController, {
+                cityMap: cityMap,
+                selectedItineraryId: selectedItineraryId,
+                itineraries: itineraries
+            }, void 0, false, {
+                fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                lineNumber: 127,
+                columnNumber: 7
+            }, this),
+            itineraries.map((it)=>{
+                const isSelected = it.id === selectedItineraryId;
+                var _ITINERARY_COLORS_it_id;
+                const color = (_ITINERARY_COLORS_it_id = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$map$2e$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ITINERARY_COLORS"][it.id]) !== null && _ITINERARY_COLORS_it_id !== void 0 ? _ITINERARY_COLORS_it_id : "#d4af37";
+                const positions = it.destinationIds.map((id)=>cityMap.get(id)).filter((c)=>!!c).map((c)=>[
+                        c.latitude,
+                        c.longitude
+                    ]);
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Polyline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Polyline"], {
+                    positions: positions,
+                    pathOptions: {
+                        color,
+                        weight: isSelected ? 3 : 1.5,
+                        opacity: isSelected ? 0.9 : 0.3,
+                        dashArray: isSelected ? "12 6" : "6 6",
+                        className: isSelected ? "route-active" : "route-inactive"
+                    }
+                }, it.id, false, {
+                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                    lineNumber: 143,
+                    columnNumber: 11
+                }, this);
+            }),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RouteAnimator, {}, void 0, false, {
+                fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                lineNumber: 157,
+                columnNumber: 7
+            }, this),
+            cities.map((city)=>{
+                const isHighlighted = selectedDestinationIds.has(city.id);
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Marker"], {
+                    position: [
+                        city.latitude,
+                        city.longitude
+                    ],
+                    icon: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$map$2f$components$2f$MapPin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createCityIcon"])(isHighlighted),
+                    zIndexOffset: isHighlighted ? 100 : 0,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popup"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "city-popup-wrapper",
+                            children: [
+                                city.coverImage && // eslint-disable-next-line @next/next/no-img-element
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: city.coverImage,
+                                    alt: city.name,
+                                    className: "city-popup-image"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                    lineNumber: 173,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "city-popup-content",
                                     children: [
-                                        city.coverImage && // eslint-disable-next-line @next/next/no-img-element
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: city.coverImage,
-                                            alt: city.name,
-                                            className: "city-popup-image"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "city-popup-name",
+                                            children: city.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 180,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "city-popup-desc",
+                                            children: city.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                            lineNumber: 181,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "city-popup-content",
+                                            className: "city-popup-scores",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "city-popup-name",
-                                                    children: city.name
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 166,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "city-popup-desc",
-                                                    children: city.description
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 167,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "city-popup-scores",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: [
-                                                                "✨ ",
-                                                                city.beautyScore,
-                                                                "/10"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                            lineNumber: 169,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: [
-                                                                "🍽 ",
-                                                                city.foodScore,
-                                                                "/10"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                            lineNumber: 170,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: [
-                                                                "🏛 ",
-                                                                city.historyScore,
-                                                                "/10"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                            lineNumber: 171,
-                                                            columnNumber: 21
-                                                        }, this)
+                                                        "✨ ",
+                                                        city.beautyScore,
+                                                        "/10"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 168,
-                                                    columnNumber: 19
+                                                    lineNumber: 183,
+                                                    columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/cities/".concat(city.id),
-                                                    className: "city-popup-link",
-                                                    children: "Ver ciudad →"
-                                                }, void 0, false, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: [
+                                                        "🍽 ",
+                                                        city.foodScore,
+                                                        "/10"
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                                    lineNumber: 173,
-                                                    columnNumber: 19
+                                                    lineNumber: 184,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: [
+                                                        "🏛 ",
+                                                        city.historyScore,
+                                                        "/10"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                                    lineNumber: 185,
+                                                    columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                            lineNumber: 165,
-                                            columnNumber: 17
+                                            lineNumber: 182,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/cities/".concat(city.id),
+                                            className: "city-popup-link",
+                                            children: "Ver ciudad →"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                                            lineNumber: 187,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                    lineNumber: 156,
-                                    columnNumber: 15
+                                    lineNumber: 179,
+                                    columnNumber: 17
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                                lineNumber: 155,
-                                columnNumber: 13
-                            }, this)
-                        }, city.id, false, {
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                            lineNumber: 149,
-                            columnNumber: 11
-                        }, this);
-                    })
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
-                lineNumber: 101,
-                columnNumber: 5
-            }, this)
+                            lineNumber: 170,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                        lineNumber: 169,
+                        columnNumber: 13
+                    }, this)
+                }, city.id, false, {
+                    fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+                    lineNumber: 163,
+                    columnNumber: 11
+                }, this);
+            })
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "[project]/src/features/map/components/InteractiveMap.tsx",
+        lineNumber: 113,
+        columnNumber: 5
+    }, this);
 }
-_s1(InteractiveMap, "3sN6R2awAr40+e4JKA8eG8ZhXSE=", false, function() {
+_s2(InteractiveMap, "3sN6R2awAr40+e4JKA8eG8ZhXSE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]
     ];
 });
-_c1 = InteractiveMap;
-var _c, _c1;
-__turbopack_context__.k.register(_c, "MapController");
-__turbopack_context__.k.register(_c1, "InteractiveMap");
+_c2 = InteractiveMap;
+var _c, _c1, _c2;
+__turbopack_context__.k.register(_c, "RouteAnimator");
+__turbopack_context__.k.register(_c1, "MapController");
+__turbopack_context__.k.register(_c2, "InteractiveMap");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
