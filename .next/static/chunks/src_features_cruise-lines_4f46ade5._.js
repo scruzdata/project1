@@ -60,7 +60,7 @@ function ScoreBar(param) {
                     },
                     viewport: {
                         once: true,
-                        margin: "-40px"
+                        margin: "0px"
                     },
                     transition: {
                         duration: 0.9,
@@ -305,7 +305,7 @@ function CruiseLineComparison(param) {
                                                     },
                                                     viewport: {
                                                         once: true,
-                                                        margin: "-40px"
+                                                        margin: "0px"
                                                     },
                                                     transition: {
                                                         duration: 0.85,

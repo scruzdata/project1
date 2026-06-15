@@ -294,7 +294,7 @@ function CityScores({ city }) {
                                         },
                                         viewport: {
                                             once: true,
-                                            margin: "-40px"
+                                            margin: "0px"
                                         },
                                         transition: {
                                             duration: 0.9,
@@ -674,7 +674,7 @@ function DayTimeline({ dayPlan }) {
                 },
                 viewport: {
                     once: true,
-                    margin: "-40px"
+                    margin: "0px"
                 },
                 transition: {
                     delay: i * 0.08,
@@ -933,7 +933,7 @@ function PointsOfInterestSection({ pois }) {
                 },
                 viewport: {
                     once: true,
-                    margin: "-40px"
+                    margin: "0px"
                 },
                 transition: {
                     delay: i * 0.07,

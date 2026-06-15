@@ -59,7 +59,7 @@ function ScoreBar({ label, score, delay = 0, showLabel = true, className }) {
                     },
                     viewport: {
                         once: true,
-                        margin: "-40px"
+                        margin: "0px"
                     },
                     transition: {
                         duration: 0.9,
@@ -292,7 +292,7 @@ function CruiseLineComparison({ cruiseLines }) {
                                                     },
                                                     viewport: {
                                                         once: true,
-                                                        margin: "-40px"
+                                                        margin: "0px"
                                                     },
                                                     transition: {
                                                         duration: 0.85,

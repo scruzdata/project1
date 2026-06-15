@@ -53,7 +53,7 @@ export function PointsOfInterestSection({ pois }: PointsOfInterestSectionProps) 
             key={poi.id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
+            viewport={{ once: true, margin: "0px" }}
             transition={{
               delay: i * 0.07,
               duration: 0.45,

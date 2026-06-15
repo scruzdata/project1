@@ -84,7 +84,7 @@ export function ScoreComparisonChart({ months }: ScoreComparisonChartProps) {
                     key={m.month}
                     initial={{ opacity: 0, scale: 0.7 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true, margin: "-40px" }}
+                    viewport={{ once: true, margin: "0px" }}
                     transition={{
                       delay: dimIdx * 0.04 + monthIdx * 0.02,
                       duration: 0.3,
@@ -118,7 +118,7 @@ export function ScoreComparisonChart({ months }: ScoreComparisonChartProps) {
                 key={m.month}
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-40px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{
                   delay: 0.16 + monthIdx * 0.02,
                   duration: 0.3,

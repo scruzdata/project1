@@ -65,7 +65,7 @@ export function CruiseLineComparison({ cruiseLines }: CruiseLineComparisonProps)
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${pct}%` }}
-                        viewport={{ once: true, margin: "-40px" }}
+                        viewport={{ once: true, margin: "0px" }}
                         transition={{
                           duration: 0.85,
                           ease: [0.25, 0.46, 0.45, 0.94],

@@ -427,17 +427,21 @@
    Route animations
 ───────────────────────────────────────────── */
 @keyframes march-active {
-  to { stroke-dashoffset: -18; }
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: -18; }
 }
 
 @keyframes march-inactive {
-  to { stroke-dashoffset: -12; }
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: -12; }
 }
 
 path.route-active {
+  stroke-dasharray: 12 6 !important;
   animation: march-active 0.6s linear infinite;
 }
 
 path.route-inactive {
+  stroke-dasharray: 6 6 !important;
   animation: march-inactive 1.2s linear infinite;
 }

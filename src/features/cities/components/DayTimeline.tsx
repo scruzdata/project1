@@ -60,7 +60,7 @@ export function DayTimeline({ dayPlan }: DayTimelineProps) {
             key={`${activity.time}-${i}`}
             initial={{ opacity: 0, x: -16 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
+            viewport={{ once: true, margin: "0px" }}
             transition={{
               delay: i * 0.08,
               duration: 0.45,
