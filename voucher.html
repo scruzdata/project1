@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Crucero Voucher</title>
+
+<style>
+  body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 40px;
+  }
+
+  .ticket {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  }
+
+  /* LEFT SIDE */
+  .left {
+    width: 65%;
+    padding: 30px;
+    background:
+      linear-gradient(135deg, rgba(10,37,64,0.82), rgba(27,58,87,0.78)),
+      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuzO2J4bkCLdsPdGcLhm7Y1AZGaQSTZevPXg&s') center/cover no-repeat;
+    color: white;
+    position: relative;
+  }
+
+  .ship-line {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .info-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .label {
+    font-size: 11px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .value {
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: 600;
+  }
+
+  .route {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* RIGHT SIDE */
+  .right {
+    width: 35%;
+    background: #ffffff;
+    padding: 25px;
+    position: relative;
+    border-left: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .qr {
+    width: 160px;
+    height: 160px;
+    margin: 0 0 0 24px;
+  }
+
+  .barcode {
+    font-family: monospace;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    color: #444;
+  }
+
+  .footer {
+    font-size: 11px;
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+  }
+
+  /* perforation effect */
+  .cut {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 10px,
+      white 10px,
+      white 20px
+    );
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .ticket { box-shadow: none; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="ticket">
+
+  <div class="left">
+    <div class="ship-line">BOARDING PASS • CRUCERO</div>
+
+    <div class="title">El viaje que siempre habéis soñado</div>
+    <div class="subtitle">Regalo de Jubilación</div>
+
+    <div class="info-grid">
+      <div>
+        <div class="label">Pasajeros</div>
+        <div class="value">Maria Teresa Bardera Bardera</div>
+        <div class="value">Julio Cruz Granado</div>
+      </div>
+
+      <div>
+        <div class="label">Código de Reserva</div>
+        <div class="value">AÑO-2027</div>
+      </div>
+
+      <div>
+        <div class="label">Clase</div>
+        <div class="value">Suite Premium</div>
+      </div>
+
+      <div>
+        <div class="label">Embarque</div>
+        <div class="value">Siempre abierto</div>
+      </div>
+    </div>
+
+    <div class="route">
+      Crucero → Playa → Vacaciones → Jubilacion → Descanso
+    </div>
+
+    <div class="cut"></div>
+  </div>
+
+  <div class="right">
+    <div>
+      <img id="qr" class="qr" />
+      <div class="barcode">||| |||| ||| | |||| |||</div>
+    </div>
+
+    <div class="footer">
+      Escanea el código para acceder a vuestra experiencia personalizada
+    </div>
+  </div>
+
+</div>
+
+<!-- QR SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script>
+  const url = "https://project1-git-main-sergios-projects-f788a9b9.vercel.app/";
+
+  QRCode.toDataURL(url, { width: 200 }, function (err, img) {
+    document.getElementById("qr").src = img;
+  });
+</script>
+
+</body>
+</html>
