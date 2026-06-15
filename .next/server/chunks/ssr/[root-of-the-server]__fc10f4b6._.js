@@ -92,21 +92,44 @@ const itineraries = [
         image: "/images/Mediterraneo.jpg",
         description: "Este itinerario reúne algunos de los destinos más fascinantes de Europa en un viaje cómodo, variado y lleno de experiencias inolvidables. Desde las calles de Barcelona hasta los monumentos históricos de Roma, pasando por los paisajes de la Costa Azul y la espectacular Costa Amalfitana, cada parada tiene algo especial que ofrecer.\n\nPodréis pasear por ciudades llenas de historia, descubrir mercados locales, sentaros en una terraza frente al mar y disfrutar de algunas de las mejores gastronomías del mundo. Cada escala combina cultura, belleza y ese ambiente mediterráneo que invita a disfrutar sin prisas.\n\nEs el viaje perfecto para quienes desean descubrir grandes ciudades y lugares icónicos sin el estrés de organizar desplazamientos. Solo queda dejarse llevar, disfrutar del barco y despertar cada día con una nueva aventura esperando en el puerto."
     },
-    // {
-    //   id: "italia-turquia-grecia",
-    //   name: "Italia-Grecia-Turquia",
-    //   score: 9.1,
-    //   durationMin: 10,
-    //   durationMax: 12,
-    //   departurePorts: ["Barcelona", "Roma"],
-    //   destinationIds: ["barcelona", "niza", "la-spezia", "rome", "naples","katakolon","Kusadasi","santorini", "pireo"],
-    //   bestMonths: [5, 6, 9, 10],
-    //   difficulty: "easy",
-    //   idealFor: ["Primer crucero", "Ritmo tranquilo", "Cultura y gastronomía"],
-    //   highlights: ["El Coliseo", "Costa Azul", "Costa Amalfitana"],
-    //   image: "/images/italy_turquia-grecia.png",
-    //   description: "Pocos viajes permiten descubrir tantas maravillas diferentes en tan pocos días. Este recorrido une tres países extraordinarios que han sido cuna de algunas de las civilizaciones más importantes de la historia, creando una experiencia llena de contrastes, descubrimientos y paisajes inolvidables.\n\nDesde el esplendor de Roma y la elegancia de la costa italiana hasta las impresionantes ruinas de Éfeso en Turquía y los pueblos blancos de Santorini, cada escala ofrece algo único. Tendréis la oportunidad de caminar por lugares donde se escribió la historia, contemplar monumentos milenarios y disfrutar de algunos de los paisajes más espectaculares del Mediterráneo.\n\nEs un viaje para quienes sienten curiosidad por el mundo y disfrutan descubriendo nuevas culturas. Cada día aporta una experiencia diferente, convirtiendo el crucero en una colección de recuerdos que difícilmente se puede igualar."
-    // },
+    {
+        id: "mediterraneo-maravillas",
+        name: "Mediterraneo y sus maravillas",
+        score: 9.1,
+        durationMin: 7,
+        durationMax: 8,
+        departurePorts: [
+            "Barcelona"
+        ],
+        destinationIds: [
+            "barcelona",
+            "marseille",
+            "florencia",
+            "naples",
+            "palermo",
+            "tunez",
+            "barcelona"
+        ],
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        difficulty: "easy",
+        idealFor: [
+            "Primer crucero",
+            "Ritmo tranquilo",
+            "Cultura y gastronomía"
+        ],
+        highlights: [
+            "El Coliseo",
+            "Costa Azul",
+            "Tunez"
+        ],
+        image: "/images/mediterraneo-maravillas.png",
+        description: "Pocos viajes permiten descubrir tantas maravillas diferentes en tan pocos días. Este recorrido une cuatro países extraordinarios que han sido cuna de algunas de las civilizaciones más importantes de la historia, creando una experiencia llena de contrastes, descubrimientos y paisajes inolvidables.\n\nDesde el esplendor de Roma y la elegancia de la costa italiana hasta las impresionantes ruinas de Éfeso en Turquía, cada escala ofrece algo único. Tendréis la oportunidad de caminar por lugares donde se escribió la historia, contemplar monumentos milenarios y disfrutar de algunos de los paisajes más espectaculares del Mediterráneo.\n\nEs un viaje para quienes sienten curiosidad por el mundo y disfrutan descubriendo nuevas culturas. Cada día aporta una experiencia diferente, convirtiendo el crucero en una colección de recuerdos que difícilmente se puede igualar."
+    },
     {
         id: "spain-france-italy",
         name: "España- Francia-Italia",

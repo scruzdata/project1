@@ -887,8 +887,103 @@ const cities = [
             "Fuente de Orión"
         ],
         coverImage: "https://www.turitalia.com/fotos/ciudades_italia/sicilia-messina-taormina.jpg"
+    },
+    {
+        id: "florencia",
+        name: "Florencia",
+        countryId: "italy",
+        latitude: 43.7696,
+        longitude: 11.2558,
+        walkingDifficulty: "moderate",
+        safety: 5,
+        beautyScore: 10,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 32,
+        temperatureSpring: 20,
+        recommendedHours: 10,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Florencia es la cuna del Renacimiento y una de las ciudades artísticas más importantes del mundo. Su centro histórico alberga obras maestras de Michelangelo, Botticelli y Brunelleschi. Pasear por Florencia es recorrer un museo al aire libre lleno de catedrales, plazas y palacios que marcaron la historia del arte europeo.",
+        highlights: [
+            "Catedral de Santa Maria del Fiore (Duomo)",
+            "Galería Uffizi",
+            "Ponte Vecchio",
+            "Plaza della Signoria",
+            "Galería de la Academia (David de Miguel Ángel)"
+        ],
+        coverImage: "https://www.shore2shore.es/media/s2scms/tours/images/carousel/1_lxAvwlE.jpg"
+    },
+    {
+        id: "palermo",
+        name: "Palermo",
+        countryId: "italy",
+        latitude: 38.1157,
+        longitude: 13.3615,
+        walkingDifficulty: "moderate",
+        safety: 4,
+        beautyScore: 9,
+        foodScore: 10,
+        historyScore: 9,
+        temperatureSummer: 33,
+        temperatureSpring: 22,
+        recommendedHours: 8,
+        bestMonths: [
+            4,
+            5,
+            6,
+            9,
+            10
+        ],
+        description: "Palermo es la capital de Sicilia y un cruce histórico de civilizaciones: fenicios, romanos, árabes y normandos han dejado su huella. La ciudad destaca por su arquitectura ecléctica, mercados vibrantes y una de las gastronomías callejeras más famosas de Italia.",
+        highlights: [
+            "Catedral de Palermo",
+            "Palacio de los Normandos",
+            "Capilla Palatina",
+            "Mercado de Ballarò",
+            "Teatro Massimo"
+        ],
+        coverImage: "https://civitavecchia.portmobility.it/sites/default/files/palermo_-_piazza_san_domenico.jpg"
+    },
+    {
+        id: "tunez",
+        name: "Túnez",
+        countryId: "tunisia",
+        latitude: 36.8065,
+        longitude: 10.1815,
+        walkingDifficulty: "moderate",
+        safety: 3,
+        beautyScore: 8.5,
+        foodScore: 9,
+        historyScore: 10,
+        temperatureSummer: 38,
+        temperatureSpring: 24,
+        recommendedHours: 8,
+        bestMonths: [
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11
+        ],
+        description: "Túnez es la capital del país y una puerta de entrada a la antigua Cartago. Combina una medina tradicional declarada Patrimonio de la Humanidad con influencias francesas modernas. Es un destino clave para entender la historia del norte de África y el mundo fenicio-romano.",
+        highlights: [
+            "Medina de Túnez",
+            "Museo del Bardo",
+            "Ruinas de Cartago",
+            "Sidi Bou Said",
+            "Zocos tradicionales"
+        ],
+        coverImage: "https://www.taconesviajeros.com/wp-content/uploads/HammametTunez-playa.jpg"
     }
-];
+]; // "florencia",, "palermo","tunez"
 }),
 "[project]/data/itineraries.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -976,21 +1071,44 @@ const itineraries = [
         image: "/images/Mediterraneo.jpg",
         description: "Este itinerario reúne algunos de los destinos más fascinantes de Europa en un viaje cómodo, variado y lleno de experiencias inolvidables. Desde las calles de Barcelona hasta los monumentos históricos de Roma, pasando por los paisajes de la Costa Azul y la espectacular Costa Amalfitana, cada parada tiene algo especial que ofrecer.\n\nPodréis pasear por ciudades llenas de historia, descubrir mercados locales, sentaros en una terraza frente al mar y disfrutar de algunas de las mejores gastronomías del mundo. Cada escala combina cultura, belleza y ese ambiente mediterráneo que invita a disfrutar sin prisas.\n\nEs el viaje perfecto para quienes desean descubrir grandes ciudades y lugares icónicos sin el estrés de organizar desplazamientos. Solo queda dejarse llevar, disfrutar del barco y despertar cada día con una nueva aventura esperando en el puerto."
     },
-    // {
-    //   id: "italia-turquia-grecia",
-    //   name: "Italia-Grecia-Turquia",
-    //   score: 9.1,
-    //   durationMin: 10,
-    //   durationMax: 12,
-    //   departurePorts: ["Barcelona", "Roma"],
-    //   destinationIds: ["barcelona", "niza", "la-spezia", "rome", "naples","katakolon","Kusadasi","santorini", "pireo"],
-    //   bestMonths: [5, 6, 9, 10],
-    //   difficulty: "easy",
-    //   idealFor: ["Primer crucero", "Ritmo tranquilo", "Cultura y gastronomía"],
-    //   highlights: ["El Coliseo", "Costa Azul", "Costa Amalfitana"],
-    //   image: "/images/italy_turquia-grecia.png",
-    //   description: "Pocos viajes permiten descubrir tantas maravillas diferentes en tan pocos días. Este recorrido une tres países extraordinarios que han sido cuna de algunas de las civilizaciones más importantes de la historia, creando una experiencia llena de contrastes, descubrimientos y paisajes inolvidables.\n\nDesde el esplendor de Roma y la elegancia de la costa italiana hasta las impresionantes ruinas de Éfeso en Turquía y los pueblos blancos de Santorini, cada escala ofrece algo único. Tendréis la oportunidad de caminar por lugares donde se escribió la historia, contemplar monumentos milenarios y disfrutar de algunos de los paisajes más espectaculares del Mediterráneo.\n\nEs un viaje para quienes sienten curiosidad por el mundo y disfrutan descubriendo nuevas culturas. Cada día aporta una experiencia diferente, convirtiendo el crucero en una colección de recuerdos que difícilmente se puede igualar."
-    // },
+    {
+        id: "mediterraneo-maravillas",
+        name: "Mediterraneo y sus maravillas",
+        score: 9.1,
+        durationMin: 7,
+        durationMax: 8,
+        departurePorts: [
+            "Barcelona"
+        ],
+        destinationIds: [
+            "barcelona",
+            "marseille",
+            "florencia",
+            "naples",
+            "palermo",
+            "tunez",
+            "barcelona"
+        ],
+        bestMonths: [
+            5,
+            6,
+            9,
+            10
+        ],
+        difficulty: "easy",
+        idealFor: [
+            "Primer crucero",
+            "Ritmo tranquilo",
+            "Cultura y gastronomía"
+        ],
+        highlights: [
+            "El Coliseo",
+            "Costa Azul",
+            "Tunez"
+        ],
+        image: "/images/mediterraneo-maravillas.png",
+        description: "Pocos viajes permiten descubrir tantas maravillas diferentes en tan pocos días. Este recorrido une cuatro países extraordinarios que han sido cuna de algunas de las civilizaciones más importantes de la historia, creando una experiencia llena de contrastes, descubrimientos y paisajes inolvidables.\n\nDesde el esplendor de Roma y la elegancia de la costa italiana hasta las impresionantes ruinas de Éfeso en Turquía, cada escala ofrece algo único. Tendréis la oportunidad de caminar por lugares donde se escribió la historia, contemplar monumentos milenarios y disfrutar de algunos de los paisajes más espectaculares del Mediterráneo.\n\nEs un viaje para quienes sienten curiosidad por el mundo y disfrutan descubriendo nuevas culturas. Cada día aporta una experiencia diferente, convirtiendo el crucero en una colección de recuerdos que difícilmente se puede igualar."
+    },
     {
         id: "spain-france-italy",
         name: "España- Francia-Italia",

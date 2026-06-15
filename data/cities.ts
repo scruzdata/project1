@@ -633,6 +633,83 @@ export const cities: City[] = [
       "Fuente de Orión"
     ],
     coverImage: "https://www.turitalia.com/fotos/ciudades_italia/sicilia-messina-taormina.jpg"
+  },
+  {
+    id: "florencia",
+    name: "Florencia",
+    countryId: "italy",
+    latitude: 43.7696,
+    longitude: 11.2558,
+    walkingDifficulty: "moderate",
+    safety: 5,
+    beautyScore: 10,
+    foodScore: 9,
+    historyScore: 10,
+    temperatureSummer: 32,
+    temperatureSpring: 20,
+    recommendedHours: 10,
+    bestMonths: [4, 5, 6, 9, 10],
+    description: "Florencia es la cuna del Renacimiento y una de las ciudades artísticas más importantes del mundo. Su centro histórico alberga obras maestras de Michelangelo, Botticelli y Brunelleschi. Pasear por Florencia es recorrer un museo al aire libre lleno de catedrales, plazas y palacios que marcaron la historia del arte europeo.",
+    highlights: [
+      "Catedral de Santa Maria del Fiore (Duomo)",
+      "Galería Uffizi",
+      "Ponte Vecchio",
+      "Plaza della Signoria",
+      "Galería de la Academia (David de Miguel Ángel)"
+    ],
+    coverImage: "https://www.shore2shore.es/media/s2scms/tours/images/carousel/1_lxAvwlE.jpg"
+  },
+  {
+    id: "palermo",
+    name: "Palermo",
+    countryId: "italy",
+    latitude: 38.1157,
+    longitude: 13.3615,
+    walkingDifficulty: "moderate",
+    safety: 4,
+    beautyScore: 9,
+    foodScore: 10,
+    historyScore: 9,
+    temperatureSummer: 33,
+    temperatureSpring: 22,
+    recommendedHours: 8,
+    bestMonths: [4, 5, 6, 9, 10],
+    description: "Palermo es la capital de Sicilia y un cruce histórico de civilizaciones: fenicios, romanos, árabes y normandos han dejado su huella. La ciudad destaca por su arquitectura ecléctica, mercados vibrantes y una de las gastronomías callejeras más famosas de Italia.",
+    highlights: [
+      "Catedral de Palermo",
+      "Palacio de los Normandos",
+      "Capilla Palatina",
+      "Mercado de Ballarò",
+      "Teatro Massimo"
+    ],
+    coverImage: "https://civitavecchia.portmobility.it/sites/default/files/palermo_-_piazza_san_domenico.jpg"
+  },
+  {
+    id: "tunez",
+    name: "Túnez",
+    countryId: "tunisia",
+    latitude: 36.8065,
+    longitude: 10.1815,
+    walkingDifficulty: "moderate",
+    safety: 3,
+    beautyScore: 8.5,
+    foodScore: 9,
+    historyScore: 10,
+    temperatureSummer: 38,
+    temperatureSpring: 24,
+    recommendedHours: 8,
+    bestMonths: [3, 4, 5, 6, 9, 10, 11],
+    description: "Túnez es la capital del país y una puerta de entrada a la antigua Cartago. Combina una medina tradicional declarada Patrimonio de la Humanidad con influencias francesas modernas. Es un destino clave para entender la historia del norte de África y el mundo fenicio-romano.",
+    highlights: [
+      "Medina de Túnez",
+      "Museo del Bardo",
+      "Ruinas de Cartago",
+      "Sidi Bou Said",
+      "Zocos tradicionales"
+    ],
+    coverImage: "https://www.taconesviajeros.com/wp-content/uploads/HammametTunez-playa.jpg"
   }
   
 ];
+
+// "florencia",, "palermo","tunez"
