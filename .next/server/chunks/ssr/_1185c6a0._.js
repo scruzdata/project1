@@ -745,7 +745,7 @@ function ScoreComparisonChart({ months }) {
                                             },
                                             viewport: {
                                                 once: true,
-                                                margin: "-40px"
+                                                margin: "0px"
                                             },
                                             transition: {
                                                 delay: dimIdx * 0.04 + monthIdx * 0.02,
@@ -808,7 +808,7 @@ function ScoreComparisonChart({ months }) {
                                         },
                                         viewport: {
                                             once: true,
-                                            margin: "-40px"
+                                            margin: "0px"
                                         },
                                         transition: {
                                             delay: 0.16 + monthIdx * 0.02,

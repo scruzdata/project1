@@ -79,6 +79,25 @@ export function InteractiveMap({
   );
 
   return (
+    <>
+    <style>{`
+      @keyframes march-active {
+        from { stroke-dashoffset: 0; }
+        to   { stroke-dashoffset: -18; }
+      }
+      @keyframes march-inactive {
+        from { stroke-dashoffset: 0; }
+        to   { stroke-dashoffset: -12; }
+      }
+      path.route-active {
+        stroke-dasharray: 12 6 !important;
+        animation: march-active 0.6s linear infinite;
+      }
+      path.route-inactive {
+        stroke-dasharray: 6 6 !important;
+        animation: march-inactive 1.2s linear infinite;
+      }
+    `}</style>
     <MapContainer
       center={MAP_DEFAULTS.center}
       zoom={MAP_DEFAULTS.zoom}
@@ -161,5 +180,6 @@ export function InteractiveMap({
         );
       })}
     </MapContainer>
+    </>
   );
 }

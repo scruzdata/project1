@@ -3121,36 +3121,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .75;
 }
 
-@keyframes march-active {
-  from {
-    stroke-dashoffset: 0;
-  }
-
-  to {
-    stroke-dashoffset: -18px;
-  }
-}
-
-@keyframes march-inactive {
-  from {
-    stroke-dashoffset: 0;
-  }
-
-  to {
-    stroke-dashoffset: -12px;
-  }
-}
-
-path.route-active {
-  animation: .6s linear infinite march-active;
-  stroke-dasharray: 12 6 !important;
-}
-
-path.route-inactive {
-  animation: 1.2s linear infinite march-inactive;
-  stroke-dasharray: 6 6 !important;
-}
-
 .last\:border-0:last-child {
   border-width: 0;
 }
